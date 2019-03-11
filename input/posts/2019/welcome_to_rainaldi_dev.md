@@ -1,6 +1,6 @@
 Title:  "Welcome to my new blog!"
 Published: 03/02/2019
-Tags: ["Technology", "Azure","Wyam.io","Static Site Generator",”Azure”,”.DEV”,"Firebase"]
+Tags: ["Technology","Wyam.io","Static Site Generator","Azure","Firebase"]
 ---
 ![Get.DEV](/photos/GetDev.png)
 
