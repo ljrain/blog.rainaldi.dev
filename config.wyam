@@ -1,0 +1,10 @@
+Settings[Keys.Host] = "blog.rainaldi.dev";
+Settings[Keys.LinksUseHttps] = true;
+Settings[BlogKeys.Title] = "Lou Rainaldi";
+Settings[BlogKeys.Description] = "Ramblings, Rants and Technology Notes.";
+//Settings[BlogKeys.Intro] = "";
+Settings[BlogKeys.IncludeDateInPostPath] = true;
+Settings[Keys.LinkHideExtensions] = false;
+Settings[BlogKeys.IndexPaging] = true;
+Settings[BlogKeys.GenerateArchive] = true;
+Settings[Keys.CleanOutputPath] = true;

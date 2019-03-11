@@ -1,0 +1,1 @@
+azCopy /Source:output /Dest:https://rainwebstorage.blob.core.windows.net/$web /DestKey:bvsjmU/91oU2rfE38PfLSaIgh0/+8P3OrNeG3R60Qn9Snb7WfUA7IAQ0ijqhfjJHW5uu6ZMtOLHSeylH2q6DGw== /S /Y  /Pattern:"*.html" /SetContentType:"text/html"
