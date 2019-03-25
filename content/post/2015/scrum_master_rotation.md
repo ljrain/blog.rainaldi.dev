@@ -4,8 +4,6 @@ date: 2015-01-28T00:00:00-00:00
 tags: [Agile, Scrum]
 toc: false
 ---
-# Scrum Master Rotation & Metrics Collection
-
 ## Scrum Master Rotation
 
 My team has implemented a Scrum Master rotation and just finished up the first 2 months

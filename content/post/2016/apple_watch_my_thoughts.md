@@ -4,8 +4,6 @@ date: 2016-03-20T00:00:00-00:00
 tags: [Apple, Apple Watch]
 toc: false
 ---
-# Apple Watch My Thoughts
-
 My wife suggested that we pickup Apple Watches for ourselves. Originally we planned on waiting
 for the new Blaze by FitBit to be released. But, being the tech geek that I am, we thought
 let’s give it a try and if we don’t like it we can return it. It has been nearly a month now

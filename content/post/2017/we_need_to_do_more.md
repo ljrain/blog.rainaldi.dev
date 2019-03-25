@@ -4,9 +4,7 @@ date: 2017-02-18T00:00:00-00:00
 tags: [Addiction,Mental Health]
 toc: false
 ---
-# We Need To Do More
-
-Last year it was 129 a day that we lost from overdose, this year it is 144 a day.
+> Last year it was 129 a day that we lost from overdose, this year it is 144 a day.
 
 ## 144 A Day
 
@@ -27,5 +25,6 @@ simple things that everyone can do.
 - Celebrate recovery
 
 I would like to see more programs in schools. I would like to see more strong relationships based on love and caring.
+
 People who want to help others and are willing to work together.
 Are you willing to help?

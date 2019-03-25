@@ -1,11 +1,9 @@
 ---
 title: "Exploring Data Lake"
-date: 2019-3-07T00:00:00-00:00
+date: 2019-03-07T00:00:00-00:00
 tags: [Azure, Data Lake]
 toc: false
 ---
-# Exploring The Data Lake
-
 I am excited about a new project that I am involved in. We are moving our Business Intellignece System to a [Data Lake](https://en.wikipedia.org/wiki/Data_lake). This has been in discussion for some time now, another team in our company is already using Azure Data Lake and having some great results. This project is challenging as well as **fun**, I am a  tech guy...
 
 I have learned so much during the planning of this project and we are ready to move to implementation.  This involves having the resources available both physical and human and to began development. Having someone help with this has been a huge value and she has coached me the full way. I wanted to explain some things that I learned about Data Lake in this post. More will be coming as we begin development.

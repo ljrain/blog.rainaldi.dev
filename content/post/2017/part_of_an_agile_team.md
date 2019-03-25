@@ -4,13 +4,12 @@ date: 2017-02-25T00:00:00-00:00
 tags: [Agile, Scrum]
 toc: false
 ---
-# Being Part of an Agile team
+As a technologist I have worked on several different types of teams over my 20+ years of technology development career. Also, as a person I have been involved in different types of groups of people that are working together to solve a common problem or outcome. Several years ago I began a journey with Agile and started working on a Scrum team.
 
-As a technologist I have worked on several different types of teams over my 20+ years of technology development career.
-Also, as a person I have been involved in different types of groups of people that are working together to solve a
-common problem or outcome. Several years ago I began a journey with Agile and started working on a Scrum team.
 I became a Certified Scrum Master and learned from some very intelligent and passionate people who know Agile and Scrum.
+
 I have built relationships so I can continue to learn, I believe that you must always continue to learn and never become stagnant.
+
 Today, I wanted to share a blog series that two people that I know and learned from wrote. They have been
 instrumental in my Agile journey and I am grateful for the knowledge they have shared and continue to share.
 
@@ -19,6 +18,7 @@ instrumental in my Agile journey and I am grateful for the knowledge they have s
 This quote from the blog series is spot on! Agile does appear very simple, but once you start working on
 an Agile team with other people it gets difficult. There is confusion, tension and personalities. This
 must be addressed for any process and Agile has tenants that are geared towards this.
+
 This post is about sharing the series, Agile Leaders, that Russ and Jay wrote, I encourage you to read
 the series to learn about Agile. I would also like to hear you experiences with Agile. I will be writing
 more about my thoughts on working in an Agile team and my experiences and frustrations.

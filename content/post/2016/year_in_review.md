@@ -4,8 +4,6 @@ date: 2016-04-10T00:00:00-00:00
 tags: [Personal, About]
 toc: false
 ---
-# Year In Review
-
 This year saw changes in my work life, I was contacted by a previous employer to come
 back as a principal engineer. The company and boss made this decision very easy, now
 that I am at a large international company some of my daily responsibilities have changed.

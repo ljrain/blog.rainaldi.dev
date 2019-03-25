@@ -4,8 +4,6 @@ date: 2016-03-22T00:00:00-00:00
 tags: [DayOne, Journaling]
 toc: false
 ---
-# Journaling with Day One My Way
-
 I have been keeping a journal for a long time. I find it very therapeutic to write my
 thoughts down and reflect on them. I started with pen and paper, writing entries in
 notebooks. The last few years I started to use [Day One](http://www.dayoneapp.com) on

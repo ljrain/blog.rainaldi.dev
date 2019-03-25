@@ -4,8 +4,6 @@ date: 2017-02-22T00:00:00-00:00
 tags: [Dynamics 365, CRM, User Group]
 toc: false
 ---
-# Dynamics 365 Users In Pittsburgh � User Helping Users
-
 Last year I attended the CRMUG Summit in Tampa and have to say I was very impressed with everything that I
 was involved in. During the summit I attended two classes in the Black Belt Series and completed the series
 when I returned to Pittsburgh. The information that I learned in this series I put to immediate use on our

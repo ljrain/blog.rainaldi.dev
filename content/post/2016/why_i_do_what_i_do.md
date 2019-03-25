@@ -4,8 +4,6 @@ date: 2016-09-25T00:00:00-00:00
 tags: [Personal, About]
 toc: false
 ---
-# Why I do what I do
-
 **I have been blogging since 2011! WOW!**
 
 ## Why do I blog?

@@ -4,8 +4,6 @@ date: 2015-05-14T00:00:00-00:00
 tags: [Evernote]
 toc: false
 ---
-# Proud to be an Evernote Community Leader
-
 I started using Evernote back in 2011 and have found it to be so valuable to my everyday life. I use Evernote
 to log notes about my professional and personal life.
 

@@ -8,7 +8,6 @@ toc: false
 
 *UPDATED: March 10, 2019*
 
-# Welcome to my new blog!
 I have had many different sites over the years.
 
 Recently, a few months ago I decided to shut them down. I was not updating them as much and focusing to much on maintaining and updating the site. With family and work I am very busy like many of you. A friend introduced me to [Wyam.io](https://www.wyam.io) which is a static site generator and hosting using Azure Blob Storage.
