@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Evernote on Lou Rainaldi</title>
+    <link>https://blog.rainaldi.dev/tags/evernote/</link>
+    <description>Recent content in Evernote on Lou Rainaldi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 14 May 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.rainaldi.dev/tags/evernote/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Proud to be an Evernote Community Leader</title>
+      <link>https://blog.rainaldi.dev/posts/2015/05/proud-to-be-an-evernote-community-leader/</link>
+      <pubDate>Thu, 14 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rainaldi.dev/posts/2015/05/proud-to-be-an-evernote-community-leader/</guid>
+      <description>Proud to be an Evernote Community Leader I started using Evernote back in 2011 and have found it to be so valuable to my everyday life. I use Evernote to log notes about my professional and personal life.
+I keep my notes in Evernote organized with tags and notebooks. I have found it so easy to find information that I created. The ability to have my notes with me on my phone and computer made information easily available at anytime.</description>
+    </item>
+    
+  </channel>
+</rss>

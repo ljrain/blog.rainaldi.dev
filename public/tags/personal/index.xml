@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Personal on Lou Rainaldi</title>
+    <link>https://blog.rainaldi.dev/tags/personal/</link>
+    <description>Recent content in Personal on Lou Rainaldi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 07 Feb 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.rainaldi.dev/tags/personal/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Make A Difference</title>
+      <link>https://blog.rainaldi.dev/posts/2017/02/make-a-difference/</link>
+      <pubDate>Tue, 07 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rainaldi.dev/posts/2017/02/make-a-difference/</guid>
+      <description>Make A Difference Everyone can make a difference. If you care about something, stand up, put yourself out there and do something. The smallest thing can make a difference and if enough people do something small the change can be huge. We live in a world that is full of advancements and luxuries that where science fiction a few decades ago. Yet, we have a world that is so full of sadness and darkness.</description>
+    </item>
+    
+    <item>
+      <title>Why I Do What I Do</title>
+      <link>https://blog.rainaldi.dev/posts/2016/09/why-i-do-what-i-do/</link>
+      <pubDate>Sun, 25 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rainaldi.dev/posts/2016/09/why-i-do-what-i-do/</guid>
+      <description>Why I do what I do I have been blogging since 2011! WOW!
+Why do I blog? Technology Geek I work in technology and enjoy technology. I am amazed by the advancements that we are seeing on a rapid pace. I remember in the early 90s setting up internet “newsgroup” for a corporate BBS, before the web was what it is today. Now, people have access to so much information in the palms of their hands.</description>
+    </item>
+    
+    <item>
+      <title>2016 - Year In Review</title>
+      <link>https://blog.rainaldi.dev/posts/2016/04/2016-year-in-review/</link>
+      <pubDate>Sun, 10 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rainaldi.dev/posts/2016/04/2016-year-in-review/</guid>
+      <description>Year In Review This year saw changes in my work life, I was contacted by a previous employer to come back as a principal engineer. The company and boss made this decision very easy, now that I am at a large international company some of my daily responsibilities have changed. But, all in all I am doing the same thing that I have been doing for that past 15+ years.</description>
+    </item>
+    
+  </channel>
+</rss>

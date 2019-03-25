@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Lake on Lou Rainaldi</title>
+    <link>https://blog.rainaldi.dev/tags/data-lake/</link>
+    <description>Recent content in Data Lake on Lou Rainaldi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://blog.rainaldi.dev/tags/data-lake/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Exploring Data Lake</title>
+      <link>https://blog.rainaldi.dev/posts/1/01/exploring-data-lake/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rainaldi.dev/posts/1/01/exploring-data-lake/</guid>
+      <description>Exploring The Data Lake I am excited about a new project that I am involved in. We are moving our Business Intellignece System to a Data Lake. This has been in discussion for some time now, another team in our company is already using Azure Data Lake and having some great results. This project is challenging as well as fun, I am a tech guy&amp;hellip;
+I have learned so much during the planning of this project and we are ready to move to implementation.</description>
+    </item>
+    
+  </channel>
+</rss>

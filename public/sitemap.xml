@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://blog.rainaldi.dev/about/</loc>
+    <lastmod>2019-03-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.rainaldi.dev/posts/2019/03/welcome-to-my-new-blog-blog.rainaldi.dev/</loc>
+    <lastmod>2019-03-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.rainaldi.dev/posts/2017/11/crmug-summit-2017/</loc>
+    <lastmod>2017-11-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.rainaldi.dev/</loc>
+    <lastmod>2017-06-26T18:27:58+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.rainaldi.dev/posts/2017/02/being-part-of-an-agile-team/</loc>
+    <lastmod>2017-02-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.rainaldi.dev/posts/2017/02/dynamics-365-users-in-pittsburgh-users-helping-users/</loc>
+    <lastmod>2017-02-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.rainaldi.dev/posts/2017/02/we-need-to-do-more/</loc>
+    <lastmod>2017-02-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.rainaldi.dev/posts/2017/02/make-a-difference/</loc>
+    <lastmod>2017-02-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.rainaldi.dev/posts/2016/09/why-i-do-what-i-do/</loc>
+    <lastmod>2016-09-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.rainaldi.dev/posts/2016/04/2016-year-in-review/</loc>
+    <lastmod>2016-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.rainaldi.dev/posts/2016/03/journaling-with-day-one-my-way/</loc>
+    <lastmod>2016-03-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.rainaldi.dev/posts/2016/03/apple-watch-my-thoughts/</loc>
+    <lastmod>2016-03-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.rainaldi.dev/posts/2015/05/proud-to-be-an-evernote-community-leader/</loc>
+    <lastmod>2015-05-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.rainaldi.dev/posts/2015/01/scrum-master-rotation-metric-collection/</loc>
+    <lastmod>2015-01-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.rainaldi.dev/posts/2012/08/pittsburgh-blogger-facebook-group/</loc>
+    <lastmod>2012-08-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.rainaldi.dev/posts/2012/07/great-plains-econnect-2010-pipe-is-being-closed-erorr/</loc>
+    <lastmod>2012-07-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.rainaldi.dev/posts/2012/02/introducing-the-new-rainaldi.org/</loc>
+    <lastmod>2012-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.rainaldi.dev/posts/2011/08/backup-buddy-for-wordpress/</loc>
+    <lastmod>2011-08-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.rainaldi.dev/posts/2011/08/wordpress/</loc>
+    <lastmod>2011-08-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.rainaldi.dev/tags/.dev/</loc>
+    <lastmod>2019-03-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rainaldi.dev/tags/about/</loc>
+    <lastmod>2019-03-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rainaldi.dev/tags/addiction/</loc>
+    <lastmod>2017-02-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rainaldi.dev/tags/agile/</loc>
+    <lastmod>2017-02-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rainaldi.dev/tags/apple/</loc>
+    <lastmod>2016-03-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rainaldi.dev/tags/apple-watch/</loc>
+    <lastmod>2016-03-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rainaldi.dev/tags/azure/</loc>
+    <lastmod>2019-03-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rainaldi.dev/tags/blogger/</loc>
+    <lastmod>2012-08-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rainaldi.dev/tags/community/</loc>
+    <lastmod>2017-02-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rainaldi.dev/tags/crm/</loc>
+    <lastmod>2017-11-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rainaldi.dev/tags/data-lake/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rainaldi.dev/tags/dayone/</loc>
+    <lastmod>2016-03-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rainaldi.dev/tags/dynamics-365/</loc>
+    <lastmod>2017-11-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rainaldi.dev/tags/econnect/</loc>
+    <lastmod>2012-07-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rainaldi.dev/tags/evernote/</loc>
+    <lastmod>2015-05-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rainaldi.dev/posts/1/01/exploring-data-lake/</loc>
+  </url>
+  
+  <url>
+    <loc>https://blog.rainaldi.dev/tags/firebase/</loc>
+    <lastmod>2019-03-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rainaldi.dev/tags/great-plains/</loc>
+    <lastmod>2012-07-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rainaldi.dev/tags/journaling/</loc>
+    <lastmod>2016-03-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rainaldi.dev/tags/mental-health/</loc>
+    <lastmod>2017-02-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rainaldi.dev/tags/personal/</loc>
+    <lastmod>2017-02-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rainaldi.dev/post/</loc>
+    <lastmod>2019-03-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rainaldi.dev/tags/scrum/</loc>
+    <lastmod>2017-02-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rainaldi.dev/tags/static-site-generator/</loc>
+    <lastmod>2019-03-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rainaldi.dev/tags/</loc>
+    <lastmod>2019-03-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rainaldi.dev/tags/user-group/</loc>
+    <lastmod>2017-11-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rainaldi.dev/tags/wordpress/</loc>
+    <lastmod>2012-08-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.rainaldi.dev/tags/wyam.io/</loc>
+    <lastmod>2019-03-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
