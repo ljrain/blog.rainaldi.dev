@@ -1,6 +1,6 @@
 baseURL: https://blog.rainaldi.dev
 languageCode: en-us
-defaultContentLanguage: en
+defaultContentLanguage: en-us
 title: Lou Rainaldi
 theme: cupper-hugo-theme
 googleAnalytics: UA-136871287-1
