@@ -1,0 +1,18 @@
+---
+label: Blog Post
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: list
+  name: tags
+  label: tags
+- type: boolean
+  name: toc
+  label: toc
+pages:
+- content/post/using-forestry.md
