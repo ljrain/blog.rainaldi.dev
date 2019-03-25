@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="generator" content="Hugo 0.54.0" />
-  <link rel="canonical" href="https://blog.rainaldi.dev/posts/2012/08/pittsburgh-blogger-facebook-group/">
+  <link rel="canonical" href="https://blog.rainaldi.dev/posts/2019/03/exploring-data-lake/">
 
   
 
@@ -32,7 +32,7 @@
 
   
   
-  <title>Pittsburgh Blogger Facebook Group | Lou Rainaldi</title>
+  <title>Exploring Data Lake | Lou Rainaldi</title>
 </head>
 
   <body>
@@ -227,11 +227,11 @@
       <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
         <use xlink:href="#bookmark"></use>
       </svg>
-      Pittsburgh Blogger Facebook Group
+      Exploring Data Lake
     </h1>
     <div class="date">
       
-      <strong aria-hidden="true">Publish date: </strong>Aug 3, 2012
+      <strong aria-hidden="true">Publish date: </strong>Mar 7, 2019
     </div>
     
       <div class="tags">
@@ -243,7 +243,7 @@
                 <use xlink:href="#tag"></use>
               </svg>
               
-              <a href="https://blog.rainaldi.dev/tags/blogger/">Blogger</a>
+              <a href="https://blog.rainaldi.dev/tags/azure/">Azure</a>
             </li>
           
             <li>
@@ -251,22 +251,139 @@
                 <use xlink:href="#tag"></use>
               </svg>
               
-              <a href="https://blog.rainaldi.dev/tags/wordpress/">Wordpress</a>
+              <a href="https://blog.rainaldi.dev/tags/data-lake/">Data Lake</a>
             </li>
           
         </ul>
       </div>
     
     
-    <p>Emily over at <a href="https://emilylevenson.com/">emilylevenson.com</a> created a new Facebook group for Pittsburgh Bloggers, I joined the group right away. Those who do not know her, she also create Project: Food Budget which I have participate in for helping to manage my family&rsquo;s food spending. I love the idea of a group for people who blog around Pittsburgh to communicate and get to know each other better. I am a new one to the blogging arena, I am not new to the web or Internet though. I have been created web applications since the late 90s, I travel a lot to develop sites during the boom.</p>
+    
 
-<p>I left Pittsburgh and hurried back around 2000 and met my beautiful wife and started a family. I am a tech addict and stay on Twitter and Facebook all the time.</p>
+<p>I am excited about a new project that I am involved in. We are moving our Business Intellignece System to a <a href="https://en.wikipedia.org/wiki/Data_lake">Data Lake</a>. This has been in discussion for some time now, another team in our company is already using Azure Data Lake and having some great results. This project is challenging as well as <strong>fun</strong>, I am a  tech guy&hellip;</p>
 
-<p>I am truly connected with my Fitbit which is a very advance pedometer that monitor not only my steps but the floors and activity level that I walk.</p>
+<p>I have learned so much during the planning of this project and we are ready to move to implementation.  This involves having the resources available both physical and human and to began development. Having someone help with this has been a huge value and she has coached me the full way. I wanted to explain some things that I learned about Data Lake in this post. More will be coming as we begin development.</p>
 
-<p>As of this writing the Facebook group is getting a lot of activity and I will be checking out each of the blogs posted there. Born and raised in Pittsburgh, I love our city and am so happy to be part of a great community of bloggers.</p>
+<h2 id="azure">Azure</h2>
 
-<p>Once again, Pittsburgh bloggers join the Pittsburgh Bloggers Facebook group and build our community.</p>
+<p>First, it is important to note that we are buildng this using Azure Data Lake Gen 1. The way I have been thinking about a Data Lake is file storage on the cloud. But, it is much more than that. I was so confused as to why we would want to use CSV files for our Data Lake and also the purpose of the Data Lake.</p>
+
+<h3 id="data-lake-is-not-a-data-warehouse">Data Lake is NOT a Data Warehouse</h3>
+
+<p>This is very important to understand, a Data Warehouse is a database that is built to report on data. Typically using an OLAP database and the STAR Schema. A Data Warehouse may be populated from a Data Lake.</p>
+
+<p>A Data Lake though, can store <strong>unstructured</strong>, <strong>semi-structured</strong> and <strong>structured</strong> data. That can be ready to use now or anytime in the future. Data can be stored on the Data Lake that you may not know what you are going to use it for yet. You may store clicks on your web sites from a log on your Data Lake for future analysis.</p>
+
+<p>The idea that you store information on the Data Lake, storing as much information as you can so you can use this data now or later.  This data is unstructured meaning you do NOT have a schema that you are working with. CSV files are often used. This provides a way of saving a file with data to the lake from any system. The schema is determined on read, so when the data is looked at is when you care about the schema.</p>
+
+<p>The big point here is to realize that a Data Warehouse and a Data Lake are two different concepts. One is used for reporting on data in a structured way. The other (Data Lake) is used for storing all kinds of data that may not be used at the moment but can be used at a later time. The cost of storage on a Data Lake is very very low. This allows you to store as much data as possible.</p>
+
+<h2 id="csv-files">CSV Files?</h2>
+
+<p>Just like I mentioned earlier, I was shocked about the idea of storing CSV files on  the Data Lake. But I now understand, we are not using CSV files for our project we are using JSON files. <em>More on that later</em>.</p>
+
+<h3 id="schema-on-read">Schema on Read</h3>
+
+<p>This is a very important concept to understand. A CSV file is a <strong><em>Schema on Read</em></strong>, you can open the CSV file up and determine what the schema is. You don&rsquo;t have to build a schema to create a CSV file. You just write it out. So if you have a system that is providing you data you have to send the data over and store in on the Data Lake. When you are ready to use that data you will determine the schema when reading it and begin to analyze it.</p>
+
+<p>Standard databases are <strong><em>Schema on Write</em></strong>, you create a schema that you will use and data is add to the database following the schema that was already created.</p>
+
+<h2 id="data-lake-storage">Data Lake Storage</h2>
+
+<p>Azure Data Lake is built upon <a href="https://en.wikipedia.org/wiki/Apache_Hadoop">Apache Hadoop&rsquo;s</a> distrubted file system. This file system provides a low cost storage of data that can easily be searched and transformed to build data models from. This is a big part of <strong>BIG DATA</strong>, having the ability to store and query very large sets of data that can grew to terrabytes or petabytes.</p>
+
+<h3 id="navigating-the-data-lake">Navigating the Data Lake</h3>
+
+<p>Because of all of the different types of data that can be stored in a Data Lake the meta data is very important. The data needs to be understood and have the ability to find it.</p>
+
+<h4 id="raw-data">RAW Data</h4>
+
+<p>Below is a sample of storing data on a Data Lake, using sales transactions.
+<div class="file-tree">
+  <ul>
+<li>catalog
+
+<ul>
+<li>RAW</li>
+<li>SalesData
+
+<ul>
+<li>Store100</li>
+<li>03
+
+<ul>
+<li>01
+
+<ul>
+<li>transactions.json</li>
+</ul></li>
+</ul></li>
+<li>Store200</li>
+<li>03
+
+<ul>
+<li>01
+
+<ul>
+<li>transactions.csv</li>
+</ul></li>
+</ul></li>
+<li>Store300</li>
+<li>03
+
+<ul>
+<li>01
+
+<ul>
+<li>transactions.txt</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+
+</div>
+</p>
+
+<p>Each of the files may have a different format.
+<em>transaction.json</em></p>
+
+<pre><code>{&quot;id&quot;:&quot;9012&quot;,&quot;date&quot;:&quot;2019-03-01T03:14&quot;,&quot;totalinvoice&quot;:321.09}
+</code></pre>
+
+<p><em>transaction.csv</em></p>
+
+<pre><code>84012,2019-03-01T05:06&quot;,51.01
+</code></pre>
+
+<p><em>transaction.txt</em></p>
+
+<pre><code>50012 2019-03-01T09:37  25.00
+</code></pre>
+
+<p>In the above example each location is sending the daily sales transactions to the Data Lake. The location will send the transactions in a JSON format and save the files to the correct location. This structure can be secured so each location will only have access to their directory path. This is the RAW data that is being sent from the source system. One location may send a JSON file and one location may send a CSV file. The schema on each location may be slightly different as well. We deal with that when we begin to read the data and transform it to the results that are desired. The above example is assuming that a daily file is  received from each location.</p>
+
+<h4 id="master-data">MASTER Data</h4>
+
+<p>We have to next transform the data into a more usable format. In this example we have decided that after the locations load the raw data the data will be merged together and cleaned. We create a batch that reads all of the raw data from the current previous day and merge the data into a single file for the day. Part of this merge process adds an additional data point to represent that store.  The end result in a daily file in JSON that combines all of the individual raw location files into a single daily file.</p>
+
+<pre><code>\catalog\MASTER\SalesData\2019\03\01\all_transactions.json
+</code></pre>
+
+<p><em>all_transactions.json</em></p>
+
+<pre><code>{&quot;store&quot;:&quot;100&quot;,id&quot;:&quot;9012&quot;,&quot;date&quot;:&quot;2019-03-01T03:14&quot;,&quot;totalinvoice&quot;:321.09}
+{&quot;store&quot;:&quot;200&quot;,id&quot;:&quot;84012&quot;,&quot;date&quot;:&quot;2019-03-01T05:06&quot;,&quot;totalinvoice&quot;:51.01}
+{&quot;store&quot;:&quot;300&quot;,id&quot;:&quot;50012&quot;,&quot;date&quot;:&quot;2019-03-01T09:37&quot;,&quot;totalinvoice&quot;:25.00}
+</code></pre>
+
+<p>This is a longer post than I anticipated, but I wanted to capture what a Data Lake is and build upon this. There are several other components that need to be addressed and will be in a future post.</p>
+
+<ul>
+<li>How to query the RAW data files</li>
+<li>How to create the MASTER data file</li>
+<li>What to do with the MASTER data file</li>
+</ul>
 
   </main>
   <div id="disqus-container">

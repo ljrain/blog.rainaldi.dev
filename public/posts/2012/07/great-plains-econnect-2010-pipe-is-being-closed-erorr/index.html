@@ -258,15 +258,11 @@
       </div>
     
     
-    
-
-<h1 id="great-plains-econnect-2010-pipe-is-being-closed">Great Plains eConnect 2010 PIPE is being closed</h1>
-
-<p>This is a common error I have run across and can be solved by making a change on the
-client�s machine eConnect config file. This post is a reminder for me if I see this
+    <p>This is a common error I have run across and can be solved by making a change on the
+client&rsquo;s machine eConnect config file. This post is a reminder for me if I see this
 on a new image of a machine using eConnect.</p>
 
-<p>Error message �There was an error writing to the pipe: The pipe is being closed.�
+<p>Error message <code>There was an error writing to the pipe: The pipe is being closed.</code>`
 occurs on eConnect for Microsoft Dynamics GP 2010.</p>
 
 <p>Add <strong>receiveTimeout=�infinite�</strong> to the Microsoft.Dynamics.GP.eConnect.Service.exe.config
@@ -274,14 +270,14 @@ file for the eConnect Integration service.</p>
 
 <p>The binding section should resemble this:</p>
 
-<pre><code>&lt;binding name=&quot;eConnectNamedPipeConfig&quot; closeTimeout=&quot;00:10:00&quot; sendTimeout=&quot;00:10:00&quot;
+<pre><code class="language-xml">&lt;binding name=&quot;eConnectNamedPipeConfig&quot; closeTimeout=&quot;00:10:00&quot; sendTimeout=&quot;00:10:00&quot;
 receiveTimeout =&quot;infinite&quot; transferMode=&quot;Buffered&quot; hostNameComparisonMode=&quot;StrongWildcard&quot;
 maxBufferPoolSize=&quot;2147483647&quot; maxBufferSize=&quot;2147483647&quot;
 maxReceivedMessageSize=&quot;2147483647&quot;&gt;
-	&lt;readerQuotas maxDepth=&quot;60&quot; maxStringContentLength=&quot;2147483647&quot;maxArrayLength=&quot;2147483647&quot;
-	 maxBytesPerRead=&quot;2147483647&quot; maxNameTableCharCount=&quot;2147483647&quot; /&gt;
-	&lt;security mode=&quot;Transport&quot;&gt;&lt;transport protectionLevel=&quot;EncryptAndSign&quot; /&gt;
-	&lt;/security&gt;
+    &lt;readerQuotas maxDepth=&quot;60&quot; maxStringContentLength=&quot;2147483647&quot;maxArrayLength=&quot;2147483647&quot;
+     maxBytesPerRead=&quot;2147483647&quot; maxNameTableCharCount=&quot;2147483647&quot; /&gt;
+    &lt;security mode=&quot;Transport&quot;&gt;&lt;transport protectionLevel=&quot;EncryptAndSign&quot; /&gt;
+    &lt;/security&gt;
 &lt;/binding&gt;
 </code></pre>
 

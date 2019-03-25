@@ -17,8 +17,9 @@
       <pubDate>Mon, 09 Jul 2012 00:00:00 +0000</pubDate>
       
       <guid>https://blog.rainaldi.dev/posts/2012/07/great-plains-econnect-2010-pipe-is-being-closed-erorr/</guid>
-      <description>Great Plains eConnect 2010 PIPE is being closed This is a common error I have run across and can be solved by making a change on the client�s machine eConnect config file. This post is a reminder for me if I see this on a new image of a machine using eConnect.
-Error message �There was an error writing to the pipe: The pipe is being closed.� occurs on eConnect for Microsoft Dynamics GP 2010.</description>
+      <description>This is a common error I have run across and can be solved by making a change on the client&amp;rsquo;s machine eConnect config file. This post is a reminder for me if I see this on a new image of a machine using eConnect.
+Error message There was an error writing to the pipe: The pipe is being closed.` occurs on eConnect for Microsoft Dynamics GP 2010.
+Add receiveTimeout=�infinite� to the Microsoft.</description>
     </item>
     
   </channel>

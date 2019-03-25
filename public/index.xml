@@ -22,13 +22,23 @@
     </item>
     
     <item>
+      <title>Exploring Data Lake</title>
+      <link>https://blog.rainaldi.dev/posts/2019/03/exploring-data-lake/</link>
+      <pubDate>Thu, 07 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rainaldi.dev/posts/2019/03/exploring-data-lake/</guid>
+      <description>I am excited about a new project that I am involved in. We are moving our Business Intellignece System to a Data Lake. This has been in discussion for some time now, another team in our company is already using Azure Data Lake and having some great results. This project is challenging as well as fun, I am a tech guy&amp;hellip;
+I have learned so much during the planning of this project and we are ready to move to implementation.</description>
+    </item>
+    
+    <item>
       <title>Welcome to My New Blog (blog.rainaldi.dev)</title>
       <link>https://blog.rainaldi.dev/posts/2019/03/welcome-to-my-new-blog-blog.rainaldi.dev/</link>
       <pubDate>Sat, 02 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://blog.rainaldi.dev/posts/2019/03/welcome-to-my-new-blog-blog.rainaldi.dev/</guid>
       <description>UPDATED: March 10, 2019
-Welcome to my new blog! I have had many different sites over the years.
+I have had many different sites over the years.
 Recently, a few months ago I decided to shut them down. I was not updating them as much and focusing to much on maintaining and updating the site. With family and work I am very busy like many of you. A friend introduced me to Wyam.io which is a static site generator and hosting using Azure Blob Storage.</description>
     </item>
     
@@ -48,7 +58,8 @@ My Goals Before I leave for the Summit, I always prepare by listing out my goals
       <pubDate>Sat, 25 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>https://blog.rainaldi.dev/posts/2017/02/being-part-of-an-agile-team/</guid>
-      <description>Being Part of an Agile team As a technologist I have worked on several different types of teams over my 20+ years of technology development career. Also, as a person I have been involved in different types of groups of people that are working together to solve a common problem or outcome. Several years ago I began a journey with Agile and started working on a Scrum team. I became a Certified Scrum Master and learned from some very intelligent and passionate people who know Agile and Scrum.</description>
+      <description>As a technologist I have worked on several different types of teams over my 20+ years of technology development career. Also, as a person I have been involved in different types of groups of people that are working together to solve a common problem or outcome. Several years ago I began a journey with Agile and started working on a Scrum team.
+I became a Certified Scrum Master and learned from some very intelligent and passionate people who know Agile and Scrum.</description>
     </item>
     
     <item>
@@ -57,7 +68,7 @@ My Goals Before I leave for the Summit, I always prepare by listing out my goals
       <pubDate>Wed, 22 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>https://blog.rainaldi.dev/posts/2017/02/dynamics-365-users-in-pittsburgh-users-helping-users/</guid>
-      <description>Dynamics 365 Users In Pittsburgh � User Helping Users Last year I attended the CRMUG Summit in Tampa and have to say I was very impressed with everything that I was involved in. During the summit I attended two classes in the Black Belt Series and completed the series when I returned to Pittsburgh. The information that I learned in this series I put to immediate use on our Dynamics 365 project.</description>
+      <description>Last year I attended the CRMUG Summit in Tampa and have to say I was very impressed with everything that I was involved in. During the summit I attended two classes in the Black Belt Series and completed the series when I returned to Pittsburgh. The information that I learned in this series I put to immediate use on our Dynamics 365 project. I also met with a local Pittsburgh Chapter leader and discussed participating in the local chapter.</description>
     </item>
     
     <item>
@@ -66,8 +77,8 @@ My Goals Before I leave for the Summit, I always prepare by listing out my goals
       <pubDate>Sat, 18 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>https://blog.rainaldi.dev/posts/2017/02/we-need-to-do-more/</guid>
-      <description>We Need To Do More Last year it was 129 a day that we lost from overdose, this year it is 144 a day.
-144 A Day We have to do more. We have to take action and speak out and help people. We have to find ways to help people even when they are NOT ready. We have to make them ready. I watched a video on Facebook this morning that really touches this point.</description>
+      <description>Last year it was 129 a day that we lost from overdose, this year it is 144 a day.
+ 144 A Day We have to do more. We have to take action and speak out and help people. We have to find ways to help people even when they are NOT ready. We have to make them ready. I watched a video on Facebook this morning that really touches this point.</description>
     </item>
     
     <item>
@@ -76,7 +87,8 @@ My Goals Before I leave for the Summit, I always prepare by listing out my goals
       <pubDate>Tue, 07 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>https://blog.rainaldi.dev/posts/2017/02/make-a-difference/</guid>
-      <description>Make A Difference Everyone can make a difference. If you care about something, stand up, put yourself out there and do something. The smallest thing can make a difference and if enough people do something small the change can be huge. We live in a world that is full of advancements and luxuries that where science fiction a few decades ago. Yet, we have a world that is so full of sadness and darkness.</description>
+      <description>Everyone can make a difference. If you care about something, stand up, put yourself out there and do something.
+The smallest thing can make a difference and if enough people do something small the change can be huge. We live in a world that is full of advancements and luxuries that where science fiction a few decades ago. Yet, we have a world that is so full of sadness and darkness.</description>
     </item>
     
     <item>
@@ -85,7 +97,7 @@ My Goals Before I leave for the Summit, I always prepare by listing out my goals
       <pubDate>Sun, 25 Sep 2016 00:00:00 +0000</pubDate>
       
       <guid>https://blog.rainaldi.dev/posts/2016/09/why-i-do-what-i-do/</guid>
-      <description>Why I do what I do I have been blogging since 2011! WOW!
+      <description>I have been blogging since 2011! WOW!
 Why do I blog? Technology Geek I work in technology and enjoy technology. I am amazed by the advancements that we are seeing on a rapid pace. I remember in the early 90s setting up internet “newsgroup” for a corporate BBS, before the web was what it is today. Now, people have access to so much information in the palms of their hands.</description>
     </item>
     
@@ -95,7 +107,7 @@ Why do I blog? Technology Geek I work in technology and enjoy technology. I am a
       <pubDate>Sun, 10 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>https://blog.rainaldi.dev/posts/2016/04/2016-year-in-review/</guid>
-      <description>Year In Review This year saw changes in my work life, I was contacted by a previous employer to come back as a principal engineer. The company and boss made this decision very easy, now that I am at a large international company some of my daily responsibilities have changed. But, all in all I am doing the same thing that I have been doing for that past 15+ years.</description>
+      <description>This year saw changes in my work life, I was contacted by a previous employer to come back as a principal engineer. The company and boss made this decision very easy, now that I am at a large international company some of my daily responsibilities have changed. But, all in all I am doing the same thing that I have been doing for that past 15+ years. I have been very involved with the social media communities and especially Pittsburgh based communities.</description>
     </item>
     
     <item>
@@ -104,7 +116,7 @@ Why do I blog? Technology Geek I work in technology and enjoy technology. I am a
       <pubDate>Tue, 22 Mar 2016 00:00:00 +0000</pubDate>
       
       <guid>https://blog.rainaldi.dev/posts/2016/03/journaling-with-day-one-my-way/</guid>
-      <description>Journaling with Day One My Way I have been keeping a journal for a long time. I find it very therapeutic to write my thoughts down and reflect on them. I started with pen and paper, writing entries in notebooks. The last few years I started to use Day One on my iPhone. I wanted to have a way of having my journal with me so I could record my thoughts whenever and wherever I was.</description>
+      <description>I have been keeping a journal for a long time. I find it very therapeutic to write my thoughts down and reflect on them. I started with pen and paper, writing entries in notebooks. The last few years I started to use Day One on my iPhone. I wanted to have a way of having my journal with me so I could record my thoughts whenever and wherever I was. I tried a few other applications on my phone, I really wanted something that I could use on my computer and iPhone.</description>
     </item>
     
     <item>
@@ -113,7 +125,8 @@ Why do I blog? Technology Geek I work in technology and enjoy technology. I am a
       <pubDate>Sun, 20 Mar 2016 00:00:00 +0000</pubDate>
       
       <guid>https://blog.rainaldi.dev/posts/2016/03/apple-watch-my-thoughts/</guid>
-      <description>Apple Watch My Thoughts My wife suggested that we pickup Apple Watches for ourselves. Originally we planned on waiting for the new Blaze by FitBit to be released. But, being the tech geek that I am, we thought let’s give it a try and if we don’t like it we can return it. It has been nearly a month now and I have to say I really like the Apple Watch a lot.</description>
+      <description>My wife suggested that we pickup Apple Watches for ourselves. Originally we planned on waiting for the new Blaze by FitBit to be released. But, being the tech geek that I am, we thought let’s give it a try and if we don’t like it we can return it. It has been nearly a month now and I have to say I really like the Apple Watch a lot.
+It is a very comfortable watch and doesn’t get in the way.</description>
     </item>
     
     <item>
@@ -122,7 +135,7 @@ Why do I blog? Technology Geek I work in technology and enjoy technology. I am a
       <pubDate>Thu, 14 May 2015 00:00:00 +0000</pubDate>
       
       <guid>https://blog.rainaldi.dev/posts/2015/05/proud-to-be-an-evernote-community-leader/</guid>
-      <description>Proud to be an Evernote Community Leader I started using Evernote back in 2011 and have found it to be so valuable to my everyday life. I use Evernote to log notes about my professional and personal life.
+      <description>I started using Evernote back in 2011 and have found it to be so valuable to my everyday life. I use Evernote to log notes about my professional and personal life.
 I keep my notes in Evernote organized with tags and notebooks. I have found it so easy to find information that I created. The ability to have my notes with me on my phone and computer made information easily available at anytime.</description>
     </item>
     
@@ -132,7 +145,7 @@ I keep my notes in Evernote organized with tags and notebooks. I have found it s
       <pubDate>Wed, 28 Jan 2015 00:00:00 +0000</pubDate>
       
       <guid>https://blog.rainaldi.dev/posts/2015/01/scrum-master-rotation-metric-collection/</guid>
-      <description>Scrum Master Rotation &amp;amp; Metrics Collection Scrum Master Rotation My team has implemented a Scrum Master rotation and just finished up the first 2 months of it. We had a retrospective dedicated just to this new process and had a lot of great feedback from it.
+      <description>Scrum Master Rotation My team has implemented a Scrum Master rotation and just finished up the first 2 months of it. We had a retrospective dedicated just to this new process and had a lot of great feedback from it.
 I found that it provided a whole different perspective on what we do and how we understand Scrum. But, I found that this also helped really protect the sprint with this rotation, we decided to make he rotation last 3 months and extended the current person another month.</description>
     </item>
     
@@ -142,7 +155,7 @@ I found that it provided a whole different perspective on what we do and how we 
       <pubDate>Fri, 03 Aug 2012 00:00:00 +0000</pubDate>
       
       <guid>https://blog.rainaldi.dev/posts/2012/08/pittsburgh-blogger-facebook-group/</guid>
-      <description>Pittsburgh Blogger Facebook Group Emily over at emilylevenson.com created a new Facebook group for Pittsburgh Bloggers, I joined the group right away. Those who do not know her, she also create Project: Food Budget which I have participate in for helping to manage my family&amp;rsquo;s food spending. I love the idea of a group for people who blog around Pittsburgh to communicate and get to know each other better. I am a new one to the blogging arena, I am not new to the web or Internet though.</description>
+      <description>Emily over at emilylevenson.com created a new Facebook group for Pittsburgh Bloggers, I joined the group right away. Those who do not know her, she also create Project: Food Budget which I have participate in for helping to manage my family&amp;rsquo;s food spending. I love the idea of a group for people who blog around Pittsburgh to communicate and get to know each other better. I am a new one to the blogging arena, I am not new to the web or Internet though.</description>
     </item>
     
     <item>
@@ -151,8 +164,9 @@ I found that it provided a whole different perspective on what we do and how we 
       <pubDate>Mon, 09 Jul 2012 00:00:00 +0000</pubDate>
       
       <guid>https://blog.rainaldi.dev/posts/2012/07/great-plains-econnect-2010-pipe-is-being-closed-erorr/</guid>
-      <description>Great Plains eConnect 2010 PIPE is being closed This is a common error I have run across and can be solved by making a change on the client�s machine eConnect config file. This post is a reminder for me if I see this on a new image of a machine using eConnect.
-Error message �There was an error writing to the pipe: The pipe is being closed.� occurs on eConnect for Microsoft Dynamics GP 2010.</description>
+      <description>This is a common error I have run across and can be solved by making a change on the client&amp;rsquo;s machine eConnect config file. This post is a reminder for me if I see this on a new image of a machine using eConnect.
+Error message There was an error writing to the pipe: The pipe is being closed.` occurs on eConnect for Microsoft Dynamics GP 2010.
+Add receiveTimeout=�infinite� to the Microsoft.</description>
     </item>
     
     <item>
@@ -161,7 +175,7 @@ Error message �There was an error writing to the pipe: The pipe is being close
       <pubDate>Sun, 05 Feb 2012 00:00:00 +0000</pubDate>
       
       <guid>https://blog.rainaldi.dev/posts/2012/02/introducing-the-new-rainaldi.org/</guid>
-      <description>Introducing the new Rainaldi.org Well, as part of my cleanup and organization project with my domain names I decided to keep Rainaldi.org as my �resume� and technology blog. I will blog about things that I work with as well as new technologies.
+      <description>Well, as part of my cleanup and organization project with my domain names I decided to keep Rainaldi.org as my resume and technology blog. I will blog about things that I work with as well as new technologies.
 Having been in the computer industry professionally for over 15 years now, I have been involved in projects covering various aspects of technology throughout several industries. I have benefited from this depth by gaining a strong knowledge of solution design and business practices from some of the best people in the industry and expanding my knowledge set to handling many different situations.</description>
     </item>
     
@@ -171,28 +185,18 @@ Having been in the computer industry professionally for over 15 years now, I hav
       <pubDate>Mon, 29 Aug 2011 00:00:00 +0000</pubDate>
       
       <guid>https://blog.rainaldi.dev/posts/2011/08/backup-buddy-for-wordpress/</guid>
-      <description>Backup Buddy for WordPress Part of the project I am on involves moving the entire WordPress site from our internal data center to an Amazon EC2 zone. Backup Buddy was recommended by a consultant that we are working with and I tested it against a Go Daddy account first.
+      <description>Part of the project I am on involves moving the entire WordPress site from our internal data center to an Amazon EC2 zone. Backup Buddy was recommended by a consultant that we are working with and I tested it against a Go Daddy account first.
 Well, let&amp;rsquo;s same this is a fantastic plugin, I backed up the entire site (database and files) and moved the ZIP file as well as the importbuddy.</description>
     </item>
     
     <item>
-      <title>Wordpress</title>
-      <link>https://blog.rainaldi.dev/posts/2011/08/wordpress/</link>
+      <title>Using WordPress</title>
+      <link>https://blog.rainaldi.dev/posts/2011/08/using-wordpress/</link>
       <pubDate>Sat, 27 Aug 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rainaldi.dev/posts/2011/08/wordpress/</guid>
-      <description>WordPress Well, let me start by saying that my background has always been in Microsoft technologies (VB, C#, ASP.NET SQL Server, etc). But, I have used others such as Java, Oracle, Sybase, PHP and MySQL; this has always been a strong point of my background that I can easily switch between environments.
+      <guid>https://blog.rainaldi.dev/posts/2011/08/using-wordpress/</guid>
+      <description>Well, let me start by saying that my background has always been in Microsoft technologies (VB, C#, ASP.NET SQL Server, etc). But, I have used others such as Java, Oracle, Sybase, PHP and MySQL; this has always been a strong point of my background that I can easily switch between environments.
 A recent project at work pushed my hand to learn WordPress and like I usually do I jumped in full force.</description>
-    </item>
-    
-    <item>
-      <title>Exploring Data Lake</title>
-      <link>https://blog.rainaldi.dev/posts/1/01/exploring-data-lake/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.rainaldi.dev/posts/1/01/exploring-data-lake/</guid>
-      <description>Exploring The Data Lake I am excited about a new project that I am involved in. We are moving our Business Intellignece System to a Data Lake. This has been in discussion for some time now, another team in our company is already using Azure Data Lake and having some great results. This project is challenging as well as fun, I am a tech guy&amp;hellip;
-I have learned so much during the planning of this project and we are ready to move to implementation.</description>
     </item>
     
   </channel>
