@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wordpress on Lou Rainaldi</title>
+    <link>https://blog.rainaldi.dev/tags/wordpress/</link>
+    <description>Recent content in Wordpress on Lou Rainaldi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 03 Aug 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.rainaldi.dev/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Pittsburgh Blogger Facebook Group</title>
+      <link>https://blog.rainaldi.dev/posts/2012/08/pittsburgh-blogger-facebook-group/</link>
+      <pubDate>Fri, 03 Aug 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rainaldi.dev/posts/2012/08/pittsburgh-blogger-facebook-group/</guid>
+      <description>Pittsburgh Blogger Facebook Group Emily over at emilylevenson.com created a new Facebook group for Pittsburgh Bloggers, I joined the group right away. Those who do not know her, she also create Project: Food Budget which I have participate in for helping to manage my family&amp;rsquo;s food spending. I love the idea of a group for people who blog around Pittsburgh to communicate and get to know each other better. I am a new one to the blogging arena, I am not new to the web or Internet though.</description>
+    </item>
+    
+    <item>
+      <title>Introducing the new Rainaldi.org</title>
+      <link>https://blog.rainaldi.dev/posts/2012/02/introducing-the-new-rainaldi.org/</link>
+      <pubDate>Sun, 05 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rainaldi.dev/posts/2012/02/introducing-the-new-rainaldi.org/</guid>
+      <description>Introducing the new Rainaldi.org Well, as part of my cleanup and organization project with my domain names I decided to keep Rainaldi.org as my �resume� and technology blog. I will blog about things that I work with as well as new technologies.
+Having been in the computer industry professionally for over 15 years now, I have been involved in projects covering various aspects of technology throughout several industries. I have benefited from this depth by gaining a strong knowledge of solution design and business practices from some of the best people in the industry and expanding my knowledge set to handling many different situations.</description>
+    </item>
+    
+    <item>
+      <title>Backup Buddy for Wordpress</title>
+      <link>https://blog.rainaldi.dev/posts/2011/08/backup-buddy-for-wordpress/</link>
+      <pubDate>Mon, 29 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rainaldi.dev/posts/2011/08/backup-buddy-for-wordpress/</guid>
+      <description>Backup Buddy for WordPress Part of the project I am on involves moving the entire WordPress site from our internal data center to an Amazon EC2 zone. Backup Buddy was recommended by a consultant that we are working with and I tested it against a Go Daddy account first.
+Well, let&amp;rsquo;s same this is a fantastic plugin, I backed up the entire site (database and files) and moved the ZIP file as well as the importbuddy.</description>
+    </item>
+    
+    <item>
+      <title>Wordpress</title>
+      <link>https://blog.rainaldi.dev/posts/2011/08/wordpress/</link>
+      <pubDate>Sat, 27 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rainaldi.dev/posts/2011/08/wordpress/</guid>
+      <description>WordPress Well, let me start by saying that my background has always been in Microsoft technologies (VB, C#, ASP.NET SQL Server, etc). But, I have used others such as Java, Oracle, Sybase, PHP and MySQL; this has always been a strong point of my background that I can easily switch between environments.
+A recent project at work pushed my hand to learn WordPress and like I usually do I jumped in full force.</description>
+    </item>
+    
+  </channel>
+</rss>

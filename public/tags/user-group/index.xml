@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>User Group on Lou Rainaldi</title>
+    <link>https://blog.rainaldi.dev/tags/user-group/</link>
+    <description>Recent content in User Group on Lou Rainaldi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Nov 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.rainaldi.dev/tags/user-group/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CRMUG Summit 2017</title>
+      <link>https://blog.rainaldi.dev/posts/2017/11/crmug-summit-2017/</link>
+      <pubDate>Mon, 27 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rainaldi.dev/posts/2017/11/crmug-summit-2017/</guid>
+      <description>I was able to attend CRMUG Summit again this year. The 2017 Summit was hosted in Nashville, TN at the Gaylord Opryland Resort. I have been so impressed with the amount of content and the people who attend Summit both times now.
+My Goals Before I leave for the Summit, I always prepare by listing out my goals. The number of sessions available is amazing and it is very easy to become overwhelmed and miss some very good sessions.</description>
+    </item>
+    
+    <item>
+      <title>Dynamics 365 Users in Pittsburgh - Users Helping Users</title>
+      <link>https://blog.rainaldi.dev/posts/2017/02/dynamics-365-users-in-pittsburgh-users-helping-users/</link>
+      <pubDate>Wed, 22 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rainaldi.dev/posts/2017/02/dynamics-365-users-in-pittsburgh-users-helping-users/</guid>
+      <description>Dynamics 365 Users In Pittsburgh � User Helping Users Last year I attended the CRMUG Summit in Tampa and have to say I was very impressed with everything that I was involved in. During the summit I attended two classes in the Black Belt Series and completed the series when I returned to Pittsburgh. The information that I learned in this series I put to immediate use on our Dynamics 365 project.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Apple on Lou Rainaldi</title>
+    <link>https://blog.rainaldi.dev/tags/apple/</link>
+    <description>Recent content in Apple on Lou Rainaldi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Mar 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.rainaldi.dev/tags/apple/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Apple Watch My Thoughts</title>
+      <link>https://blog.rainaldi.dev/posts/2016/03/apple-watch-my-thoughts/</link>
+      <pubDate>Sun, 20 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rainaldi.dev/posts/2016/03/apple-watch-my-thoughts/</guid>
+      <description>Apple Watch My Thoughts My wife suggested that we pickup Apple Watches for ourselves. Originally we planned on waiting for the new Blaze by FitBit to be released. But, being the tech geek that I am, we thought let’s give it a try and if we don’t like it we can return it. It has been nearly a month now and I have to say I really like the Apple Watch a lot.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Great Plains on Lou Rainaldi</title>
+    <link>https://blog.rainaldi.dev/tags/great-plains/</link>
+    <description>Recent content in Great Plains on Lou Rainaldi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 09 Jul 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.rainaldi.dev/tags/great-plains/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Great Plains eConnect 2010 PIPE is being closed erorr</title>
+      <link>https://blog.rainaldi.dev/posts/2012/07/great-plains-econnect-2010-pipe-is-being-closed-erorr/</link>
+      <pubDate>Mon, 09 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rainaldi.dev/posts/2012/07/great-plains-econnect-2010-pipe-is-being-closed-erorr/</guid>
+      <description>Great Plains eConnect 2010 PIPE is being closed This is a common error I have run across and can be solved by making a change on the client�s machine eConnect config file. This post is a reminder for me if I see this on a new image of a machine using eConnect.
+Error message �There was an error writing to the pipe: The pipe is being closed.� occurs on eConnect for Microsoft Dynamics GP 2010.</description>
+    </item>
+    
+  </channel>
+</rss>
