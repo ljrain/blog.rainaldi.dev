@@ -2,7 +2,7 @@ baseURL: https://blog.rainaldi.dev
 languageCode: en-us
 defaultContentLanguage: en-us
 title: Lou Rainaldi
-theme: papercss-hugo-theme
+theme: cupper-hugo-theme
 googleAnalytics: UA-136871287-1
 disqusShortname: blograinaldidev
 enableGitInfo: true
