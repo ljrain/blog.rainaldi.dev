@@ -104,7 +104,6 @@ The parameters provides are listed below.
   - Throw Errors if an attribute is NOT found `false`
   - Array of attributes that will be located from the path `"OfficeId","OfficeName","Status"`
 
-![MultiLevelJsonExtractor Example](JSONExtractor_OracleCloud_USQL.png)
 
 _The Extract statement is the same as any other extract statement and references the attribute names as well as defines the data type._
 
