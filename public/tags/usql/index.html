@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="generator" content="Hugo 0.54.0" />
-  <link rel="canonical" href="https://blog.rainaldi.dev/posts/2019/03/welcome-to-my-new-blog-blog.rainaldi.dev/">
+  <link rel="canonical" href="https://blog.rainaldi.dev/tags/usql/">
 
   
 
@@ -32,7 +32,7 @@
 
   
   
-  <title>Welcome to My New Blog (blog.rainaldi.dev) | Lou Rainaldi</title>
+  <title>Usql | Lou Rainaldi</title>
 </head>
 
   <body>
@@ -168,7 +168,7 @@
       
       
       
-      <a href="/post/" aria-current="page">
+      <a href="/post/" >
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
@@ -181,7 +181,7 @@
       
       
       
-      <a href="/tags/" >
+      <a href="/tags/" aria-current="page">
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
@@ -223,165 +223,24 @@
         <div>
           
   <main id="main">
-    <h1>
-      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-        <use xlink:href="#bookmark"></use>
-      </svg>
-      Welcome to My New Blog (blog.rainaldi.dev)
-    </h1>
-    <div class="date">
-      
-      <strong aria-hidden="true">Publish date: </strong>Mar 2, 2019
-    </div>
-    
-      <div class="tags">
-        <strong aria-hidden="true">Tags: </strong>
-        <ul aria-label="tags">
-          
-            <li>
-              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
-                <use xlink:href="#tag"></use>
-              </svg>
-              
-              <a href="https://blog.rainaldi.dev/tags/azure/">Azure</a>
-            </li>
-          
-            <li>
-              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
-                <use xlink:href="#tag"></use>
-              </svg>
-              
-              <a href="https://blog.rainaldi.dev/tags/wyam.io/">Wyam.io</a>
-            </li>
-          
-            <li>
-              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
-                <use xlink:href="#tag"></use>
-              </svg>
-              
-              <a href="https://blog.rainaldi.dev/tags/static-site-generator/">Static Site Generator</a>
-            </li>
-          
-            <li>
-              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
-                <use xlink:href="#tag"></use>
-              </svg>
-              
-              <a href="https://blog.rainaldi.dev/tags/.dev/">.DEV</a>
-            </li>
-          
-            <li>
-              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
-                <use xlink:href="#tag"></use>
-              </svg>
-              
-              <a href="https://blog.rainaldi.dev/tags/firebase/">Firebase</a>
-            </li>
-          
-        </ul>
-      </div>
-    
-    
+    <h1>Usql</h1>
+    <ul class="patterns-list">
     
 
-<p><img src="/images/2019/getdotdev.png" alt="Get.DEV" /></p>
-
-<p><em>UPDATED: March 10, 2019</em></p>
-
-<p>I have had many different sites over the years.</p>
-
-<p>Recently, a few months ago I decided to shut them down. I was not updating them as much and focusing to much on maintaining and updating the site. With family and work I am very busy like many of you. A friend introduced me to <a href="https://www.wyam.io">Wyam.io</a> which is a static site generator and hosting using Azure Blob Storage.</p>
-
-<h2 id="why-a-static-site-generator">Why a Static Site Generator</h2>
-
-<p>A static site generator does just want the name says, it generates a static web site. This removes the need for server side code on the hosting platform and increases the performance of the site. Sites are just HTML and Javascript. This also means there is no login for the site so security is increased as well. But, just make sure you have the access to your site secured so others can’t update data to your site.</p>
-
-<h3 id="markdown">Markdown</h3>
-
-<p>I have been using Markdown for several years now and just love how it allows you to just focus on the content. You use the markdown syntax to describe how the content will be viewed and also can add markdown meta data about the document. Markdown files can easily be converted into HTML, PDF and other formats.</p>
-
-<p>I have already been using markdown to create my posts and then convert them when ready. Now, using Wyam, I have a draft folder that contains my draft posts all written in markdown. When I am ready I move the post into the posts folder and run a build command which looks at all of the content and generates the site. The site is then ready to deploy to my hosting provider.</p>
-
-<h2 id="why-azure-blob-storage">Why Azure Blob Storage</h2>
-
-<p>Azure Blob Storage is very very cheap&hellip; It is not made for hosting dynamic web sites but it does have an option for hosting static pages. Publishing my site that is generated from Wyam to Azure Blob Storage is handled using AzCopy and then I purge the CDN for making the site available.</p>
-
-<p>I have had some issues right now with the workflow and making my pages available with the most recent content. This is because I am new to use Azure Blob and CDN. So, once the workflow is streamlined, I will then put everything into a release batch file that will handle everything for me.</p>
-
-<p><strong>UPDATE: Mar-05-2019</strong>
-*I have been having problems with purging the CDN on Azure, I have purged in through the portal as well as with PowerShell but it doesn&rsquo;t seem to always work (I am sure I am doing something wrong). For now I have <a href="https://www.rainaldi.dev">www.rainaldi.dev</a> on Azure and <a href="https://blog.rainaldi.dev">blog.rainaldi.dev</a> on Google Firebase.</p>
-
-<p>I decided to also give Google Firebase a try.*</p>
-
-<h2 id="google-firebase-hosting">Google Firebase Hosting</h2>
-
-<p>Originally I was trying to use Azure Blob Storage, this works but I have been running into issues with purging the CDN when I updated the site. I decided to try out <a href="https://firebase.google.com">Google Firebase</a>. This is where I am currently hosting <a href="https://blog.rainaldi.dev">Rainaldi Blog</a>. I will be writing more about this in a later post.</p>
-
-<h2 id="show-your-stuff-with-dev">Show your stuff with .dev</h2>
-
-<p>Like I said earlier, I deleted all of my web sites. I <em>thought</em> I had my backup from Wordpress before I removed the sites but I haven’t found it. I was able to get all of my posts and then had to manually convert them into Markdown. This way I have them available on this <a href="https://www.rainaldi.dev">new site</a>.</p>
-
-<p>Since I let my other domains expire and I say that there is a new top level domain <strong>.DEV</strong>, I decided to purchase this domain. The price is very reasonable at $12 a year and is also secure so I don’t have to purchase an SSL certificate. I did purchase the domain through Google Domains.</p>
-
-<blockquote>
-<p><strong>A domain just for developers</strong>
-From tools to platforms, languages to blogs, .dev is a home for all the interesting things that
-you build. .dev lets your clients know what you do before they even open your site.</p>
-</blockquote>
-
-<p><a href="https://get.dev">Google Domains .DEV</a></p>
-
-<h2 id="next-steps">Next Steps</h2>
-
-<p>Since this is just the start of this new site there are several things that need to be completed still to streamline it and learn more about the technologies that are being used. Below is what needs to be worked on.</p>
-
-<ul class="task-list">
-<li><label><input type="checkbox" checked disabled class="task-list-item"> Migrate old posts <strong><em>(done)</em></strong></label></li>
-<li><label><input type="checkbox" disabled class="task-list-item"> Write deploy script that will deploy to Firebase</label></li>
-<li><label><input type="checkbox" disabled class="task-list-item"> <del>Write deploy script that will deploy to Azure Blob &amp; Purge CDD</del></label></li>
-<li><label><input type="checkbox" disabled class="task-list-item"> <del>Resolve issues with URL write for clean URLs</del></label></li>
-<li><label><input type="checkbox" disabled class="task-list-item"> <del>Add pipeline to change size of images included in posts</del></label></li>
-<li><label><input type="checkbox" disabled class="task-list-item"> Connect to GitHub/Azure DevOpps for deployment</label></li>
-<li><label><input type="checkbox" disabled class="task-list-item"> Add reactions with <a href="https://disqus.com">Disqus</a></label></li>
-<li><label><input type="checkbox" disabled class="task-list-item"> Write complete post on steps to setup and use site</label></li>
-</ul>
-
+      <li>
+        <h2>
+          <a href="https://blog.rainaldi.dev/posts/2019/03/extracting-json-with-usql/">
+            <svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+              <use xlink:href="#bookmark"></use>
+            </svg>
+            <sup>March 2019</sup></br>
+            “Extracting JSON With USQL&#34;
+          </a>
+        </h2>
+      </li>
+    
+    </ul>
   </main>
-  <div id="disqus-container">
-  
-    <button id="disqus-button" onclick="showComments()">Show comments</button>
-    <div id="disqus-comments">
-      
-      
-      
-        <div id="disqus_thread">
-        </div>
-        <script type="application/javascript">
-          function showComments() {
-            // Config
-var disqus_config = function () {
-};
-// Build and append comments 
-var d = document;
-var s = d.createElement('script');
-s.async = true;
-s.src = '//' + "rainaldi-dev" + '.disqus.com/embed.js';
-s.setAttribute('data-timestamp', + new Date());
-(d.head || d.body).appendChild(s);
-            // Remove button
-var disqusButton = document.getElementById('disqus-button');
-disqusButton.parentNode.removeChild(disqusButton); 
-// Un-hide comments
-var disqusComments = document.getElementById('disqus-comments');
-disqusComments.style.display = 'block'; 
-          }
-        </script>
-      
-      <noscript>Enable JavaScript to view Disqus comments.</noscript>
-    </div>
-  
-</div>
-
 
           <footer role="contentinfo">
   <div>

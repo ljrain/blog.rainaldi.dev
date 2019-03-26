@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Data Lake on Lou Rainaldi</title>
-    <link>https://blog.rainaldi.dev/tags/data-lake/</link>
-    <description>Recent content in Data Lake on Lou Rainaldi</description>
+    <title>Json on Lou Rainaldi</title>
+    <link>https://blog.rainaldi.dev/tags/json/</link>
+    <description>Recent content in Json on Lou Rainaldi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 25 Mar 2019 12:07:00 -0400</lastBuildDate>
     
-	<atom:link href="https://blog.rainaldi.dev/tags/data-lake/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.rainaldi.dev/tags/json/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,16 +19,6 @@
       <guid>https://blog.rainaldi.dev/posts/2019/03/extracting-json-with-usql/</guid>
       <description>While working on our Data Lake implementation we ran into issues saving our data to CSV. The Extractor for CSV does not ignore line feeds inside data. Which was a huge problem that we had to handle. After not much conversation it was decided to use JSON now, we planned on phasing JSON in later.
 Extraction of JSON files is not available &amp;ldquo;out of the box&amp;rdquo; with USQL, but there is a GitHub repostiory with a JSON Extractor that is highly recommended.</description>
-    </item>
-    
-    <item>
-      <title>Exploring Data Lake</title>
-      <link>https://blog.rainaldi.dev/posts/2019/03/exploring-data-lake/</link>
-      <pubDate>Thu, 07 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.rainaldi.dev/posts/2019/03/exploring-data-lake/</guid>
-      <description>I am excited about a new project that I am involved in. We are moving our Business Intellignece System to a Data Lake. This has been in discussion for some time now, another team in our company is already using Azure Data Lake and having some great results. This project is challenging as well as fun, I am a tech guy&amp;hellip;
-I have learned so much during the planning of this project and we are ready to move to implementation.</description>
     </item>
     
   </channel>

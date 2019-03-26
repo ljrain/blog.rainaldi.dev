@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="generator" content="Hugo 0.54.0" />
-  <link rel="canonical" href="https://blog.rainaldi.dev/posts/2019/03/welcome-to-my-new-blog-blog.rainaldi.dev/">
+  <link rel="canonical" href="https://blog.rainaldi.dev/posts/2019/03/extracting-json-with-usql/">
 
   
 
@@ -32,7 +32,7 @@
 
   
   
-  <title>Welcome to My New Blog (blog.rainaldi.dev) | Lou Rainaldi</title>
+  <title>“Extracting JSON With USQL&#34; | Lou Rainaldi</title>
 </head>
 
   <body>
@@ -227,11 +227,11 @@
       <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
         <use xlink:href="#bookmark"></use>
       </svg>
-      Welcome to My New Blog (blog.rainaldi.dev)
+      “Extracting JSON With USQL&#34;
     </h1>
     <div class="date">
       
-      <strong aria-hidden="true">Publish date: </strong>Mar 2, 2019
+      <strong aria-hidden="true">Publish date: </strong>Mar 25, 2019
     </div>
     
       <div class="tags">
@@ -243,7 +243,7 @@
                 <use xlink:href="#tag"></use>
               </svg>
               
-              <a href="https://blog.rainaldi.dev/tags/azure/">Azure</a>
+              <a href="https://blog.rainaldi.dev/tags/json/">JSON</a>
             </li>
           
             <li>
@@ -251,7 +251,7 @@
                 <use xlink:href="#tag"></use>
               </svg>
               
-              <a href="https://blog.rainaldi.dev/tags/wyam.io/">Wyam.io</a>
+              <a href="https://blog.rainaldi.dev/tags/usql/">USQL</a>
             </li>
           
             <li>
@@ -259,92 +259,195 @@
                 <use xlink:href="#tag"></use>
               </svg>
               
-              <a href="https://blog.rainaldi.dev/tags/static-site-generator/">Static Site Generator</a>
-            </li>
-          
-            <li>
-              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
-                <use xlink:href="#tag"></use>
-              </svg>
-              
-              <a href="https://blog.rainaldi.dev/tags/.dev/">.DEV</a>
-            </li>
-          
-            <li>
-              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
-                <use xlink:href="#tag"></use>
-              </svg>
-              
-              <a href="https://blog.rainaldi.dev/tags/firebase/">Firebase</a>
+              <a href="https://blog.rainaldi.dev/tags/data-lake/">Data Lake</a>
             </li>
           
         </ul>
       </div>
     
     
+      
+
+  <nav class="toc" aria-labelledby="toc-heading">
+    <h2 id="toc-heading">Table of contents</h2>
+    <ol>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#sample-json">
+            Sample JSON
+          </a>
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#json-extractor-assemblies">
+            JSON Extractor Assemblies
+          </a>
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#using-the-json-extractor">
+            Using The JSON Extractor
+          </a>
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#references">
+            References
+          </a>
+        </li>
+      
+    </ol>
+  </nav>
+
+
+    
     
 
-<p><img src="/images/2019/getdotdev.png" alt="Get.DEV" /></p>
+<p>While working on our Data Lake implementation we ran into issues saving our data to CSV. The Extractor for CSV does not ignore line feeds inside data. Which was a huge problem that we had to handle. After not much conversation it was decided to use JSON now, we planned on phasing JSON in later.</p>
 
-<p><em>UPDATED: March 10, 2019</em></p>
+<p>Extraction of JSON files is not available <em>&ldquo;out of the box&rdquo;</em> with USQL, but there is a <a href="https://github.com/Azure/usql">GitHub repostiory with a JSON Extractor</a> that is highly recommended.</p>
 
-<p>I have had many different sites over the years.</p>
+<h2 id="sample-json">Sample JSON</h2>
 
-<p>Recently, a few months ago I decided to shut them down. I was not updating them as much and focusing to much on maintaining and updating the site. With family and work I am very busy like many of you. A friend introduced me to <a href="https://www.wyam.io">Wyam.io</a> which is a static site generator and hosting using Azure Blob Storage.</p>
+<p>Below is a sample of the JSON that I am working with, notice the line break in the OfficeDescription attribute.</p>
 
-<h2 id="why-a-static-site-generator">Why a Static Site Generator</h2>
+<pre><code>[{&quot;items&quot;:
+		[{
+			&quot;OfficeId&quot;:300000003298111,
+			&quot;OfficeName&quot;:&quot;US&quot;,
+			&quot;OfficeDescription&quot;:&quot;This is a long description
+			that contains line breaks&quot;
+		}]
+}]
+</code></pre>
 
-<p>A static site generator does just want the name says, it generates a static web site. This removes the need for server side code on the hosting platform and increases the performance of the site. Sites are just HTML and Javascript. This also means there is no login for the site so security is increased as well. But, just make sure you have the access to your site secured so others can’t update data to your site.</p>
+<p>Two challenges are present (at least for me at the time):
+    - Nested JSON objects
+    - Line breaks / carriage return included in attribute(s)</p>
 
-<h3 id="markdown">Markdown</h3>
+<p>Using JSON the line break / carriage return challenge are resolved. The JSON format addresses this. The nested objects will be addressed shortly.</p>
 
-<p>I have been using Markdown for several years now and just love how it allows you to just focus on the content. You use the markdown syntax to describe how the content will be viewed and also can add markdown meta data about the document. Markdown files can easily be converted into HTML, PDF and other formats.</p>
+<h2 id="json-extractor-assemblies">JSON Extractor Assemblies</h2>
 
-<p>I have already been using markdown to create my posts and then convert them when ready. Now, using Wyam, I have a draft folder that contains my draft posts all written in markdown. When I am ready I move the post into the posts folder and run a build command which looks at all of the content and generates the site. The site is then ready to deploy to my hosting provider.</p>
+<p>There are two assemblies provided to add JSON extracting with USQL. These are found</p>
 
-<h2 id="why-azure-blob-storage">Why Azure Blob Storage</h2>
-
-<p>Azure Blob Storage is very very cheap&hellip; It is not made for hosting dynamic web sites but it does have an option for hosting static pages. Publishing my site that is generated from Wyam to Azure Blob Storage is handled using AzCopy and then I purge the CDN for making the site available.</p>
-
-<p>I have had some issues right now with the workflow and making my pages available with the most recent content. This is because I am new to use Azure Blob and CDN. So, once the workflow is streamlined, I will then put everything into a release batch file that will handle everything for me.</p>
-
-<p><strong>UPDATE: Mar-05-2019</strong>
-*I have been having problems with purging the CDN on Azure, I have purged in through the portal as well as with PowerShell but it doesn&rsquo;t seem to always work (I am sure I am doing something wrong). For now I have <a href="https://www.rainaldi.dev">www.rainaldi.dev</a> on Azure and <a href="https://blog.rainaldi.dev">blog.rainaldi.dev</a> on Google Firebase.</p>
-
-<p>I decided to also give Google Firebase a try.*</p>
-
-<h2 id="google-firebase-hosting">Google Firebase Hosting</h2>
-
-<p>Originally I was trying to use Azure Blob Storage, this works but I have been running into issues with purging the CDN when I updated the site. I decided to try out <a href="https://firebase.google.com">Google Firebase</a>. This is where I am currently hosting <a href="https://blog.rainaldi.dev">Rainaldi Blog</a>. I will be writing more about this in a later post.</p>
-
-<h2 id="show-your-stuff-with-dev">Show your stuff with .dev</h2>
-
-<p>Like I said earlier, I deleted all of my web sites. I <em>thought</em> I had my backup from Wordpress before I removed the sites but I haven’t found it. I was able to get all of my posts and then had to manually convert them into Markdown. This way I have them available on this <a href="https://www.rainaldi.dev">new site</a>.</p>
-
-<p>Since I let my other domains expire and I say that there is a new top level domain <strong>.DEV</strong>, I decided to purchase this domain. The price is very reasonable at $12 a year and is also secure so I don’t have to purchase an SSL certificate. I did purchase the domain through Google Domains.</p>
-
-<blockquote>
-<p><strong>A domain just for developers</strong>
-From tools to platforms, languages to blogs, .dev is a home for all the interesting things that
-you build. .dev lets your clients know what you do before they even open your site.</p>
-</blockquote>
-
-<p><a href="https://get.dev">Google Domains .DEV</a></p>
-
-<h2 id="next-steps">Next Steps</h2>
-
-<p>Since this is just the start of this new site there are several things that need to be completed still to streamline it and learn more about the technologies that are being used. Below is what needs to be worked on.</p>
-
-<ul class="task-list">
-<li><label><input type="checkbox" checked disabled class="task-list-item"> Migrate old posts <strong><em>(done)</em></strong></label></li>
-<li><label><input type="checkbox" disabled class="task-list-item"> Write deploy script that will deploy to Firebase</label></li>
-<li><label><input type="checkbox" disabled class="task-list-item"> <del>Write deploy script that will deploy to Azure Blob &amp; Purge CDD</del></label></li>
-<li><label><input type="checkbox" disabled class="task-list-item"> <del>Resolve issues with URL write for clean URLs</del></label></li>
-<li><label><input type="checkbox" disabled class="task-list-item"> <del>Add pipeline to change size of images included in posts</del></label></li>
-<li><label><input type="checkbox" disabled class="task-list-item"> Connect to GitHub/Azure DevOpps for deployment</label></li>
-<li><label><input type="checkbox" disabled class="task-list-item"> Add reactions with <a href="https://disqus.com">Disqus</a></label></li>
-<li><label><input type="checkbox" disabled class="task-list-item"> Write complete post on steps to setup and use site</label></li>
+<ul>
+<li>Microsoft.Analytics.Samples.Formats.dll</li>
+<li>Newtonsoft.Json.dll</li>
 </ul>
+
+<p>These assemblies will need to be uploading to the Data Lake, registered to a database and referenced in a USQL script.</p>
+
+<p>Create a folder at the root of the Data Lake to store these assemblies. This root should be accessible to anyone who will be using the assemblies.</p>
+
+<pre><code>- Assemblies
+	- Microsoft.Analytics.Samples.Formats.dll
+	- Newtonsoft.Json.dll
+</code></pre>
+
+<h3 id="usql-database">USQL Database</h3>
+
+<p>Azure Data Lake provides Data Lake Analytics provides the ability to query the Data Lake and manage USQL databases. The USQL database is different that <em>OLTP</em> database such as Microsoft SQL Server.</p>
+
+<h3 id="create-usql-database-and-assembly-references">Create USQL Database and Assembly References</h3>
+
+<p>USQL provides ways of access the database using the USQL language. USQL scripts must be submitted as a job. The script below will drop the database <code>Assemblies</code> if it exists and then create a new database called <code>Assemblies</code>.</p>
+
+<pre><code>DROP DATABASE IF EXISTS Assemblies;
+
+CREATE DATABASE Assemblies;
+</code></pre>
+
+<p><em>Use the above script if <strong>caution</strong>, if the database exists it will be dropped and everything in it will be lost.</em></p>
+
+<p>Once the USQL database is created, create the references to the assemblies in the database.</p>
+
+<pre><code>USE Assemblies;
+
+REFERENCE ASSEMBLY Assemblies.[Newtonsoft.Json];
+REFERENCE ASSEMBLY Assemblies.[Microsoft.Analytics.Samples.Formats];
+</code></pre>
+
+<p><em>The above statements will use the database that was created and then create assemblies references for the assemblies.</em></p>
+
+<p>This is all that is needed to add assemblies to USQL. They are now available for use by anyone with access to the USQL Database and Data Lake path.</p>
+
+<h2 id="using-the-json-extractor">Using The JSON Extractor</h2>
+
+<p>Now, we are ready to start extracting data from the JSON files.</p>
+
+<p>Create a new USQL script and declare the variables for your input and output files.</p>
+
+<pre><code>USING Microsoft.Analytics.Samples.Formats.Json;
+
+DECLARE @InputFile string = @&quot;/Offices/RAW/2019/03/{*}/{*}/offices.json&quot;;
+
+DECLARE @OutputJsonFile string = @&quot;/Offices/COOKED/master_offices.json&quot;;
+</code></pre>
+
+<p>The script above first set the <code>USING</code> to the JSON assemblies. Then declare variables for the source and destination files. The wildcards, <code>{*}</code>, in the script provide a way to look in different folder paths which will make all of the data available as one dataset. The <code>@InputFile</code> above will be extracting from all <code>offices.json</code> files from March 2019, for any day and hour that is present.</p>
+
+<p>I ran into problems initially when trying to extract the data and it took longer that I like to admit. Below is the script that will extract data from the sample JSON.</p>
+
+<pre><code>@result =
+    EXTRACT OfficeId Int64,
+            OfficeName string,
+            OfficeDescription string
+    FROM @InputFile
+    USING new MultiLevelJsonExtractor(&quot;items[*]&quot;,
+          false,
+          &quot;OfficeId&quot;,
+          &quot;OfficeName&quot;,
+          &quot;OfficeDescription&quot;);
+</code></pre>
+
+<p>The issue I ran into was using the <em>basic</em> extractor and NOT specifying the JSON path.
+<code>USING new MultiLevelJsonExtractor(“items[*]” ....</code>
+The sample JSON has a parent object that contains the objects I am looking to extract. Using the MultLevelJsonExtractor provides a way of parsing the JSON structure, then in the first parameter I provide the path to the objects that I am looking for.</p>
+
+<p>The parameters provides are listed below.
+  - JSON path to extract from  <code>items[*]</code>
+  - Throw Errors if an attribute is NOT found <code>false</code>
+  - Array of attributes that will be located from the path <code>&quot;OfficeId&quot;,&quot;OfficeName&quot;,&quot;Status&quot;</code></p>
+
+<p><img src="JSONExtractor_OracleCloud_USQL.png" alt="MultiLevelJsonExtractor Example" /></p>
+
+<p><em>The Extract statement is the same as any other extract statement and references the attribute names as well as defines the data type.</em></p>
+
+<p>At this point the JSON is extracted and available to use from the <code>@result</code> variable. We can query or just output the data to another file. This is where you would do any <em>cooking</em> of the data that you wish before saving the results as the master file for use by a reporting tool.</p>
+
+<p>For the purpose of this post I am not adding any of the cooking logic and just writing the file out to a new JSON file that will be the master file.</p>
+
+<pre><code>OUTPUT @result
+TO @OutputJsonFile
+USING new JsonOutputter();
+</code></pre>
+
+<p>We have now extracted data from the source JSON and saved it in a flat JSON format. The <em>master</em> file can be used as a source for the reporting tool. This file is just one file that would be used to build a data model that will create reports.</p>
+
+<h2 id="references">References</h2>
+
+<p>While I was researching JSON extraction I found a wonderful blog by <a href="https://sqlchick.com">SQLChick.com</a> that contains great information on Data Lake and this topic as well. I had to modify some of what was provided for my purpose. I highly recommended looking at SQLChick.com for information on Data Lake, you will learn a lot from her.</p>
+
+<p><a href="https://www.sqlchick.com/entries/2017/9/4/querying-multi-structured-json-files-with-u-sql-in-azure-data-lake?rq=json">Querying Multi-Structured JSON Files with U-SQL in Azure Data Lake</a></p>
+
+<p><a href="https://github.com/Azure/usql">USQL Examples / JSON Extractor Repository</a></p>
 
   </main>
   <div id="disqus-container">
