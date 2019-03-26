@@ -4,7 +4,7 @@ defaultContentLanguage: en-us
 title: Lou Rainaldi
 theme: cupper-hugo-theme
 googleAnalytics: UA-136871287-1
-disqusShortname: rainaldi-dev
+disqusShortname: blograinaldidev
 enableGitInfo: true
 taxonomies:
   tag: tags
