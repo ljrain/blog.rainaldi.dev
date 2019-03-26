@@ -3,9 +3,9 @@ date: "2019-03-25"
 title: "About"
 tags: ["About"]
 ---
-{{% note %}}
+{{< background "success" >}}
 I have been blogging since 2011! WOW!
-{{% /note %}}
+{{< /background >}}
 
 # Why do I blog?
 
