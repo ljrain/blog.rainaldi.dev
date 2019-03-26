@@ -10,7 +10,7 @@ Extraction of JSON files is not available _"out of the box"_ with USQL, but ther
 
 ## Sample JSON
 Below is a sample of the JSON that I am working with, notice the line break in the OfficeDescription attribute.
-```
+```json
 [{"items":
 		[{
 			"OfficeId":300000003298111,
@@ -36,11 +36,11 @@ These assemblies will need to be uploading to the Data Lake, registered to a dat
 
 Create a folder at the root of the Data Lake to store these assemblies. This root should be accessible to anyone who will be using the assemblies.
 
-```
+{{% fileTree %}}
 - Assemblies
 	- Microsoft.Analytics.Samples.Formats.dll
 	- Newtonsoft.Json.dll
-```
+{{% /fileTree %}}
 
 ### USQL Database
 Azure Data Lake provides Data Lake Analytics provides the ability to query the Data Lake and manage USQL databases. The USQL database is different that _OLTP_ database such as Microsoft SQL Server.
@@ -48,7 +48,7 @@ Azure Data Lake provides Data Lake Analytics provides the ability to query the D
 ### Create USQL Database and Assembly References
 USQL provides ways of access the database using the USQL language. USQL scripts must be submitted as a job. The script below will drop the database `Assemblies` if it exists and then create a new database called `Assemblies`.
 
-```
+```sql
 DROP DATABASE IF EXISTS Assemblies;
 
 CREATE DATABASE Assemblies;
@@ -57,7 +57,7 @@ _Use the above script if **caution**, if the database exists it will be dropped 
 
 Once the USQL database is created, create the references to the assemblies in the database.
 
-```
+```sql
 USE Assemblies;
 
 REFERENCE ASSEMBLY Assemblies.[Newtonsoft.Json];
@@ -72,7 +72,7 @@ Now, we are ready to start extracting data from the JSON files.
 
 Create a new USQL script and declare the variables for your input and output files.
 
-```
+```sql
 USING Microsoft.Analytics.Samples.Formats.Json;
 
 DECLARE @InputFile string = @"/Offices/RAW/2019/03/{*}/{*}/offices.json";
@@ -83,7 +83,7 @@ The script above first set the `USING` to the JSON assemblies. Then declare vari
 
 I ran into problems initially when trying to extract the data and it took longer that I like to admit. Below is the script that will extract data from the sample JSON.
 
-```
+```sql
 @result =
     EXTRACT OfficeId Int64,
             OfficeName string,
