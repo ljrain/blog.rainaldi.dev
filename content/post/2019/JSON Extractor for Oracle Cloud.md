@@ -1,5 +1,5 @@
 ---
-title: “Extracting JSON With USQL"
+title: Extracting JSON With USQL
 date: 2019-03-25T12:07:00-04:00
 draft: false
 tags: [JSON,USQL,Data Lake]
