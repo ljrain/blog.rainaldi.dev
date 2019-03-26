@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="generator" content="Hugo 0.54.0" />
-  <link rel="canonical" href="https://blog.rainaldi.dev/tags/data-lake/">
+  <link rel="canonical" href="https://blog.rainaldi.dev/posts/2019/03/extracting-json-with-usql/">
 
   
 
@@ -32,7 +32,7 @@
 
   
   
-  <title>Data Lake | Lou Rainaldi</title>
+  <title>Extracting JSON With USQL | Lou Rainaldi</title>
 </head>
 
   <body>
@@ -168,7 +168,7 @@
       
       
       
-      <a href="/post/" >
+      <a href="/post/" aria-current="page">
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
@@ -181,7 +181,7 @@
       
       
       
-      <a href="/tags/" aria-current="page">
+      <a href="/tags/" >
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
@@ -223,37 +223,285 @@
         <div>
           
   <main id="main">
-    <h1>Data Lake</h1>
-    <ul class="patterns-list">
+    <h1>
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+        <use xlink:href="#bookmark"></use>
+      </svg>
+      Extracting JSON With USQL
+    </h1>
+    <div class="date">
+      
+      <strong aria-hidden="true">Publish date: </strong>Mar 25, 2019
+    </div>
+    
+      <div class="tags">
+        <strong aria-hidden="true">Tags: </strong>
+        <ul aria-label="tags">
+          
+            <li>
+              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                <use xlink:href="#tag"></use>
+              </svg>
+              
+              <a href="https://blog.rainaldi.dev/tags/json/">JSON</a>
+            </li>
+          
+            <li>
+              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                <use xlink:href="#tag"></use>
+              </svg>
+              
+              <a href="https://blog.rainaldi.dev/tags/usql/">USQL</a>
+            </li>
+          
+            <li>
+              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                <use xlink:href="#tag"></use>
+              </svg>
+              
+              <a href="https://blog.rainaldi.dev/tags/data-lake/">Data Lake</a>
+            </li>
+          
+        </ul>
+      </div>
+    
+    
+      
+
+  <nav class="toc" aria-labelledby="toc-heading">
+    <h2 id="toc-heading">Table of contents</h2>
+    <ol>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#sample-json">
+            Sample JSON
+          </a>
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#json-extractor-assemblies">
+            JSON Extractor Assemblies
+          </a>
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#using-the-json-extractor">
+            Using The JSON Extractor
+          </a>
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#references">
+            References
+          </a>
+        </li>
+      
+    </ol>
+  </nav>
+
+
+    
     
 
-      <li>
-        <h2>
-          <a href="https://blog.rainaldi.dev/posts/2019/03/extracting-json-with-usql/">
-            <svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-              <use xlink:href="#bookmark"></use>
-            </svg>
-            <sup>March 2019</sup></br>
-            Extracting JSON With USQL
-          </a>
-        </h2>
-      </li>
-    
+<p>While working on our Data Lake implementation we ran into issues saving our data to CSV. The Extractor for CSV does not ignore line feeds inside data. Which was a huge problem that we had to handle. After not much conversation it was decided to use JSON now, we planned on phasing JSON in later.</p>
 
-      <li>
-        <h2>
-          <a href="https://blog.rainaldi.dev/posts/2019/03/exploring-data-lake/">
-            <svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-              <use xlink:href="#bookmark"></use>
-            </svg>
-            <sup>March 2019</sup></br>
-            Exploring Data Lake
-          </a>
-        </h2>
-      </li>
-    
-    </ul>
+<p>Extraction of JSON files is not available <em>&ldquo;out of the box&rdquo;</em> with USQL, but there is a <a href="https://github.com/Azure/usql">GitHub repostiory with a JSON Extractor</a> that is highly recommended.</p>
+
+<h2 id="sample-json">Sample JSON</h2>
+
+<p>Below is a sample of the JSON that I am working with, notice the line break in the OfficeDescription attribute.</p>
+
+<pre><code class="language-json">[{&quot;items&quot;:
+		[{
+			&quot;OfficeId&quot;:300000003298111,
+			&quot;OfficeName&quot;:&quot;US&quot;,
+			&quot;OfficeDescription&quot;:&quot;This is a long description
+			that contains line breaks&quot;
+		}]
+}]
+</code></pre>
+
+<p>Two challenges are present (at least for me at the time):
+    - Nested JSON objects
+    - Line breaks / carriage return included in attribute(s)</p>
+
+<p>Using JSON the line break / carriage return challenge are resolved. The JSON format addresses this. The nested objects will be addressed shortly.</p>
+
+<h2 id="json-extractor-assemblies">JSON Extractor Assemblies</h2>
+
+<p>There are two assemblies provided to add JSON extracting with USQL. These are found</p>
+
+<ul>
+<li>Microsoft.Analytics.Samples.Formats.dll</li>
+<li>Newtonsoft.Json.dll</li>
+</ul>
+
+<p>These assemblies will need to be uploading to the Data Lake, registered to a database and referenced in a USQL script.</p>
+
+<p>Create a folder at the root of the Data Lake to store these assemblies. This root should be accessible to anyone who will be using the assemblies.</p>
+
+<div class="file-tree">
+  <ul>
+<li>Assemblies
+
+<ul>
+<li>Microsoft.Analytics.Samples.Formats.dll</li>
+<li>Newtonsoft.Json.dll</li>
+</ul></li>
+</ul>
+
+</div>
+
+
+<h3 id="usql-database">USQL Database</h3>
+
+<p>Azure Data Lake provides Data Lake Analytics provides the ability to query the Data Lake and manage USQL databases. The USQL database is different that <em>OLTP</em> database such as Microsoft SQL Server.</p>
+
+<h3 id="create-usql-database-and-assembly-references">Create USQL Database and Assembly References</h3>
+
+<p>USQL provides ways of access the database using the USQL language. USQL scripts must be submitted as a job. The script below will drop the database <code>Assemblies</code> if it exists and then create a new database called <code>Assemblies</code>.</p>
+
+<pre><code class="language-sql">DROP DATABASE IF EXISTS Assemblies;
+
+CREATE DATABASE Assemblies;
+</code></pre>
+
+<p><em>Use the above script if <strong>caution</strong>, if the database exists it will be dropped and everything in it will be lost.</em></p>
+
+<p>Once the USQL database is created, create the references to the assemblies in the database.</p>
+
+<pre><code class="language-sql">USE Assemblies;
+
+REFERENCE ASSEMBLY Assemblies.[Newtonsoft.Json];
+REFERENCE ASSEMBLY Assemblies.[Microsoft.Analytics.Samples.Formats];
+</code></pre>
+
+<p><em>The above statements will use the database that was created and then create assemblies references for the assemblies.</em></p>
+
+<p>This is all that is needed to add assemblies to USQL. They are now available for use by anyone with access to the USQL Database and Data Lake path.</p>
+
+<h2 id="using-the-json-extractor">Using The JSON Extractor</h2>
+
+<p>Now, we are ready to start extracting data from the JSON files.</p>
+
+<p>Create a new USQL script and declare the variables for your input and output files.</p>
+
+<pre><code class="language-sql">USING Microsoft.Analytics.Samples.Formats.Json;
+
+DECLARE @InputFile string = @&quot;/Offices/RAW/2019/03/{*}/{*}/offices.json&quot;;
+
+DECLARE @OutputJsonFile string = @&quot;/Offices/COOKED/master_offices.json&quot;;
+</code></pre>
+
+<p>The script above first set the <code>USING</code> to the JSON assemblies. Then declare variables for the source and destination files. The wildcards, <code>{*}</code>, in the script provide a way to look in different folder paths which will make all of the data available as one dataset. The <code>@InputFile</code> above will be extracting from all <code>offices.json</code> files from March 2019, for any day and hour that is present.</p>
+
+<p>I ran into problems initially when trying to extract the data and it took longer that I like to admit. Below is the script that will extract data from the sample JSON.</p>
+
+<pre><code class="language-sql">@result =
+    EXTRACT OfficeId Int64,
+            OfficeName string,
+            OfficeDescription string
+    FROM @InputFile
+    USING new MultiLevelJsonExtractor(&quot;items[*]&quot;,
+          false,
+          &quot;OfficeId&quot;,
+          &quot;OfficeName&quot;,
+          &quot;OfficeDescription&quot;);
+</code></pre>
+
+<p>The issue I ran into was using the <em>basic</em> extractor and NOT specifying the JSON path.
+<code>USING new MultiLevelJsonExtractor(“items[*]” ....</code>
+The sample JSON has a parent object that contains the objects I am looking to extract. Using the MultLevelJsonExtractor provides a way of parsing the JSON structure, then in the first parameter I provide the path to the objects that I am looking for.</p>
+
+<p>The parameters provides are listed below.
+  - JSON path to extract from  <code>items[*]</code>
+  - Throw Errors if an attribute is NOT found <code>false</code>
+  - Array of attributes that will be located from the path <code>&quot;OfficeId&quot;,&quot;OfficeName&quot;,&quot;Status&quot;</code></p>
+
+<p><em>The Extract statement is the same as any other extract statement and references the attribute names as well as defines the data type.</em></p>
+
+<p>At this point the JSON is extracted and available to use from the <code>@result</code> variable. We can query or just output the data to another file. This is where you would do any <em>cooking</em> of the data that you wish before saving the results as the master file for use by a reporting tool.</p>
+
+<p>For the purpose of this post I am not adding any of the cooking logic and just writing the file out to a new JSON file that will be the master file.</p>
+
+<pre><code>OUTPUT @result
+TO @OutputJsonFile
+USING new JsonOutputter();
+</code></pre>
+
+<p>We have now extracted data from the source JSON and saved it in a flat JSON format. The <em>master</em> file can be used as a source for the reporting tool. This file is just one file that would be used to build a data model that will create reports.</p>
+
+<h2 id="references">References</h2>
+
+<p>While I was researching JSON extraction I found a wonderful blog by <a href="https://sqlchick.com">SQLChick.com</a> that contains great information on Data Lake and this topic as well. I had to modify some of what was provided for my purpose. I highly recommended looking at SQLChick.com for information on Data Lake, you will learn a lot from her.</p>
+
+<p><a href="https://www.sqlchick.com/entries/2017/9/4/querying-multi-structured-json-files-with-u-sql-in-azure-data-lake?rq=json">Querying Multi-Structured JSON Files with U-SQL in Azure Data Lake</a></p>
+
+<p><a href="https://github.com/Azure/usql">USQL Examples / JSON Extractor Repository</a></p>
+
   </main>
+  
+
+
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/posts/2019/03/exploring-data-lake/">Exploring Data Lake</a></li>
+	
+</ul>
+
+
+  <div id="disqus-container">
+  
+    <button id="disqus-button" onclick="showComments()">Show comments</button>
+    <div id="disqus-comments">
+      
+      
+      
+        <div id="disqus_thread">
+        </div>
+        <script type="application/javascript">
+          function showComments() {
+            // Config
+var disqus_config = function () {
+};
+// Build and append comments 
+var d = document;
+var s = d.createElement('script');
+s.async = true;
+s.src = '//' + "blograinaldidev" + '.disqus.com/embed.js';
+s.setAttribute('data-timestamp', + new Date());
+(d.head || d.body).appendChild(s);
+            // Remove button
+var disqusButton = document.getElementById('disqus-button');
+disqusButton.parentNode.removeChild(disqusButton); 
+// Un-hide comments
+var disqusComments = document.getElementById('disqus-comments');
+disqusComments.style.display = 'block'; 
+          }
+        </script>
+      
+      <noscript>Enable JavaScript to view Disqus comments.</noscript>
+    </div>
+  
+</div>
+
 
           <footer role="contentinfo">
   <div>

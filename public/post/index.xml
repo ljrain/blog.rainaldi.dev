@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Lou Rainaldi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 07 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 25 Mar 2019 12:07:00 -0400</lastBuildDate>
     
 	<atom:link href="https://blog.rainaldi.dev/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Extracting JSON With USQL</title>
+      <link>https://blog.rainaldi.dev/posts/2019/03/extracting-json-with-usql/</link>
+      <pubDate>Mon, 25 Mar 2019 12:07:00 -0400</pubDate>
+      
+      <guid>https://blog.rainaldi.dev/posts/2019/03/extracting-json-with-usql/</guid>
+      <description>While working on our Data Lake implementation we ran into issues saving our data to CSV. The Extractor for CSV does not ignore line feeds inside data. Which was a huge problem that we had to handle. After not much conversation it was decided to use JSON now, we planned on phasing JSON in later.
+Extraction of JSON files is not available &amp;ldquo;out of the box&amp;rdquo; with USQL, but there is a GitHub repostiory with a JSON Extractor that is highly recommended.</description>
+    </item>
     
     <item>
       <title>Exploring Data Lake</title>

@@ -339,14 +339,18 @@ you build. .dev lets your clients know what you do before they even open your si
 <li><label><input type="checkbox" checked disabled class="task-list-item"> Migrate old posts <strong><em>(done)</em></strong></label></li>
 <li><label><input type="checkbox" disabled class="task-list-item"> Write deploy script that will deploy to Firebase</label></li>
 <li><label><input type="checkbox" disabled class="task-list-item"> <del>Write deploy script that will deploy to Azure Blob &amp; Purge CDD</del></label></li>
-<li><label><input type="checkbox" disabled class="task-list-item"> Resolve issues with URL write for clean URLs</label></li>
-<li><label><input type="checkbox" disabled class="task-list-item"> Add pipeline to change size of images included in posts</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> <del>Resolve issues with URL write for clean URLs</del></label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> <del>Add pipeline to change size of images included in posts</del></label></li>
 <li><label><input type="checkbox" disabled class="task-list-item"> Connect to GitHub/Azure DevOpps for deployment</label></li>
 <li><label><input type="checkbox" disabled class="task-list-item"> Add reactions with <a href="https://disqus.com">Disqus</a></label></li>
 <li><label><input type="checkbox" disabled class="task-list-item"> Write complete post on steps to setup and use site</label></li>
 </ul>
 
   </main>
+  
+
+
+
   <div id="disqus-container">
   
     <button id="disqus-button" onclick="showComments()">Show comments</button>
@@ -365,7 +369,7 @@ var disqus_config = function () {
 var d = document;
 var s = d.createElement('script');
 s.async = true;
-s.src = '//' + "rainaldi-dev" + '.disqus.com/embed.js';
+s.src = '//' + "blograinaldidev" + '.disqus.com/embed.js';
 s.setAttribute('data-timestamp', + new Date());
 (d.head || d.body).appendChild(s);
             // Remove button

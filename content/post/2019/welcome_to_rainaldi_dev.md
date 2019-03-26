@@ -51,8 +51,8 @@ Since this is just the start of this new site there are several things that need
 - [x] Migrate old posts ***(done)***
 - [ ] Write deploy script that will deploy to Firebase
 - [ ] ~~Write deploy script that will deploy to Azure Blob & Purge CDD~~
-- [ ] Resolve issues with URL write for clean URLs
-- [ ] Add pipeline to change size of images included in posts
+- [ ] ~~Resolve issues with URL write for clean URLs~~
+- [ ] ~~Add pipeline to change size of images included in posts~~
 - [ ] Connect to GitHub/Azure DevOpps for deployment
 - [ ] Add reactions with [Disqus](https://disqus.com)
 - [ ] Write complete post on steps to setup and use site

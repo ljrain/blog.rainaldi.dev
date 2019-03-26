@@ -57,15 +57,16 @@ Below is a sample of storing data on a Data Lake, using sales transactions.
 
 Each of the files may have a different format.
 *transaction.json*
-```
+```json
 {"id":"9012","date":"2019-03-01T03:14","totalinvoice":321.09}
 ```
+
 *transaction.csv*
-```
+```csv
 84012,2019-03-01T05:06",51.01
 ```
 *transaction.txt*
-```
+```txt
 50012 2019-03-01T09:37  25.00
 ```
 
@@ -78,12 +79,11 @@ We have to next transform the data into a more usable format. In this example we
 ```
 
 *all_transactions.json*
-```
+```json
 {"store":"100",id":"9012","date":"2019-03-01T03:14","totalinvoice":321.09}
 {"store":"200",id":"84012","date":"2019-03-01T05:06","totalinvoice":51.01}
 {"store":"300",id":"50012","date":"2019-03-01T09:37","totalinvoice":25.00}
 ```
-
 
 This is a longer post than I anticipated, but I wanted to capture what a Data Lake is and build upon this. There are several other components that need to be addressed and will be in a future post.
 
