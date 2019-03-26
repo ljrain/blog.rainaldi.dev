@@ -327,7 +327,7 @@
 
 <p>Below is a sample of the JSON that I am working with, notice the line break in the OfficeDescription attribute.</p>
 
-<pre><code>[{&quot;items&quot;:
+<pre><code class="language-json">[{&quot;items&quot;:
 		[{
 			&quot;OfficeId&quot;:300000003298111,
 			&quot;OfficeName&quot;:&quot;US&quot;,
@@ -356,10 +356,18 @@
 
 <p>Create a folder at the root of the Data Lake to store these assemblies. This root should be accessible to anyone who will be using the assemblies.</p>
 
-<pre><code>- Assemblies
-	- Microsoft.Analytics.Samples.Formats.dll
-	- Newtonsoft.Json.dll
-</code></pre>
+<div class="file-tree">
+  <ul>
+<li>Assemblies
+
+<ul>
+<li>Microsoft.Analytics.Samples.Formats.dll</li>
+<li>Newtonsoft.Json.dll</li>
+</ul></li>
+</ul>
+
+</div>
+
 
 <h3 id="usql-database">USQL Database</h3>
 
@@ -369,7 +377,7 @@
 
 <p>USQL provides ways of access the database using the USQL language. USQL scripts must be submitted as a job. The script below will drop the database <code>Assemblies</code> if it exists and then create a new database called <code>Assemblies</code>.</p>
 
-<pre><code>DROP DATABASE IF EXISTS Assemblies;
+<pre><code class="language-sql">DROP DATABASE IF EXISTS Assemblies;
 
 CREATE DATABASE Assemblies;
 </code></pre>
@@ -378,7 +386,7 @@ CREATE DATABASE Assemblies;
 
 <p>Once the USQL database is created, create the references to the assemblies in the database.</p>
 
-<pre><code>USE Assemblies;
+<pre><code class="language-sql">USE Assemblies;
 
 REFERENCE ASSEMBLY Assemblies.[Newtonsoft.Json];
 REFERENCE ASSEMBLY Assemblies.[Microsoft.Analytics.Samples.Formats];
@@ -394,7 +402,7 @@ REFERENCE ASSEMBLY Assemblies.[Microsoft.Analytics.Samples.Formats];
 
 <p>Create a new USQL script and declare the variables for your input and output files.</p>
 
-<pre><code>USING Microsoft.Analytics.Samples.Formats.Json;
+<pre><code class="language-sql">USING Microsoft.Analytics.Samples.Formats.Json;
 
 DECLARE @InputFile string = @&quot;/Offices/RAW/2019/03/{*}/{*}/offices.json&quot;;
 
@@ -405,7 +413,7 @@ DECLARE @OutputJsonFile string = @&quot;/Offices/COOKED/master_offices.json&quot
 
 <p>I ran into problems initially when trying to extract the data and it took longer that I like to admit. Below is the script that will extract data from the sample JSON.</p>
 
-<pre><code>@result =
+<pre><code class="language-sql">@result =
     EXTRACT OfficeId Int64,
             OfficeName string,
             OfficeDescription string
@@ -425,8 +433,6 @@ The sample JSON has a parent object that contains the objects I am looking to ex
   - JSON path to extract from  <code>items[*]</code>
   - Throw Errors if an attribute is NOT found <code>false</code>
   - Array of attributes that will be located from the path <code>&quot;OfficeId&quot;,&quot;OfficeName&quot;,&quot;Status&quot;</code></p>
-
-<p><img src="JSONExtractor_OracleCloud_USQL.png" alt="MultiLevelJsonExtractor Example" /></p>
 
 <p><em>The Extract statement is the same as any other extract statement and references the attribute names as well as defines the data type.</em></p>
 
@@ -450,6 +456,17 @@ USING new JsonOutputter();
 <p><a href="https://github.com/Azure/usql">USQL Examples / JSON Extractor Repository</a></p>
 
   </main>
+  
+
+
+<h3>See Also</h3>
+<ul>
+	
+	<li><a href="/posts/2019/03/exploring-data-lake/">Exploring Data Lake</a></li>
+	
+</ul>
+
+
   <div id="disqus-container">
   
     <button id="disqus-button" onclick="showComments()">Show comments</button>
@@ -468,7 +485,7 @@ var disqus_config = function () {
 var d = document;
 var s = d.createElement('script');
 s.async = true;
-s.src = '//' + "rainaldi-dev" + '.disqus.com/embed.js';
+s.src = '//' + "blograinaldidev" + '.disqus.com/embed.js';
 s.setAttribute('data-timestamp', + new Date());
 (d.head || d.body).appendChild(s);
             // Remove button
