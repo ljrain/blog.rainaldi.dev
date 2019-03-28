@@ -1,3 +1,4 @@
+---
 baseURL: https://blog.rainaldi.dev
 languageCode: en-us
 defaultContentLanguage: en-us
@@ -6,43 +7,35 @@ theme: cupper-hugo-theme
 googleAnalytics: UA-136871287-1
 disqusShortname: blograinaldidev
 enableGitInfo: true
-
 pygmentsUseClassic: true
 pygmentsCodeFences: true
 taxonomies:
   tag: tags
-
-imaging:
-  quality = 99
-
-permalinks:
-  post: posts/:year/:month/:title/
-
 imaging:
   quality: 99
-
+permalinks:
+  post: posts/:year/:month/:title/
 params:
   description: My personal blog on technologies and rants about life.
   homeMetaContent: My personal blog on technologies and rants about life.
-  footer: Made with [Hugo](https://gohugo.io/). Themed by [Cupper](https://github.com/zwbetz-gh/cupper-hugo-theme). Deployed to [Firebase](https://firebase.google.com/docs/hosting).
-  # For more date formats see https://gohugo.io/functions/format/
+  footer: Made with [Hugo](https://gohugo.io/). Themed by [Cupper](https://github.com/zwbetz-gh/cupper-hugo-theme).
+    Deployed to [Firebase](https://firebase.google.com/docs/hosting).
   dateFormat: Jan 2, 2006
   codePenUser: someUser
-
 menu:
   nav:
-    - name: Home
-      url: /
-      weight: 1
-    - name: Blog
-      url: /post/
-      weight: 2
-    - name: Tags
-      url: /tags/
-      weight: 3
-    - name: About
-      url: /about/
-      weight: 4
-    - name: RSS
-      url: /index.xml
-      weight: 5
+  - url: "/index.xml"
+    name: RSS
+    weight: 5
+  - url: "/about/"
+    name: About
+    weight: 4
+  - url: "/tags/"
+    name: Tags
+    weight: 3
+  - url: "/post/"
+    name: Blog
+    weight: 2
+  - url: "/"
+    name: Home
+    weight: 1
