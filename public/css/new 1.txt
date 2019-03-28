@@ -1,0 +1,9 @@
+
+@pipeline().parameters.configItem.TableName
+
+
+concat(@pipeline().parameters.configItem.TableName,@formatDateTime(utcnow(),'YYYYMMDDHHmmss'))
+
+
+
+@concat ('FileName_' , formatDateTime(utcnow(), 'yyyy'), formatDateTime(utcnow(), 'MM'), formatDateTime(utcnow(), 'dd'), '_', formatDateTime(utcnow(), 'HH'),formatDateTime(utcnow(), 'mm'), formatDateTime(utcnow(), 'ss'))

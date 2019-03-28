@@ -4,7 +4,7 @@ date: 2019-03-02T00:00:00-00:00
 tags: [Azure, Wyam.io, Static Site Generator, .DEV,Firebase]
 toc: false
 ---
-![Get.DEV](/images/2019/getdotdev.png)
+{{< figure src="/images/2019/getdotdev.png" class="pic_width25" >}}
 
 *UPDATED: March 10, 2019*
 
@@ -48,7 +48,7 @@ Since I let my other domains expire and I say that there is a new top level doma
 ## Next Steps
 Since this is just the start of this new site there are several things that need to be completed still to streamline it and learn more about the technologies that are being used. Below is what needs to be worked on.
 
-- [x] Migrate old posts ***(done)***
+* [x] Migrate old posts **(done)**
 - [ ] Write deploy script that will deploy to Firebase
 - [ ] ~~Write deploy script that will deploy to Azure Blob & Purge CDD~~
 - [ ] ~~Resolve issues with URL write for clean URLs~~

@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+.pic_bw_left {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  float: left;
+  width: 25%;
+}
+
+.pic_bw_right {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  float: right;
+  width: 25%;
+}
+
+.pic_width25 {
+  width: 25%;
+}
