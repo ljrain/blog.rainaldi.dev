@@ -32,7 +32,7 @@ params:
 menu:
   nav:
     - name: Home
-      url: /
+      url: /home/
       weight: 1
     - name: Blog
       url: /post/
