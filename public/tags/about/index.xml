@@ -6,10 +6,20 @@
     <description>Recent content in About on Lou Rainaldi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Feb 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 25 Mar 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://blog.rainaldi.dev/tags/about/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About</title>
+      <link>https://blog.rainaldi.dev/about/</link>
+      <pubDate>Mon, 25 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rainaldi.dev/about/</guid>
+      <description>As a principal platform engineer, Lou is responsible for designing software architectures for line of business applications. Lou has over 20 years of professional software development experience with a large focus on Microsoft technologies. He worked integrating systems such as Unix, Linux and AS/400 systems to handle business challenges.
+Team work and collaboration are very important to Lou and he thrives working with teams and individually. Lou has been responsible for overall project management on many projects, serving as technical lead and project manager, he is accustomed to wearing many hats.</description>
+    </item>
     
     <item>
       <title>Make A Difference</title>

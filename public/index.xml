@@ -22,6 +22,16 @@ Extraction of JSON files is not available &amp;ldquo;out of the box&amp;rdquo; w
     </item>
     
     <item>
+      <title>About</title>
+      <link>https://blog.rainaldi.dev/about/</link>
+      <pubDate>Mon, 25 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rainaldi.dev/about/</guid>
+      <description>As a principal platform engineer, Lou is responsible for designing software architectures for line of business applications. Lou has over 20 years of professional software development experience with a large focus on Microsoft technologies. He worked integrating systems such as Unix, Linux and AS/400 systems to handle business challenges.
+Team work and collaboration are very important to Lou and he thrives working with teams and individually. Lou has been responsible for overall project management on many projects, serving as technical lead and project manager, he is accustomed to wearing many hats.</description>
+    </item>
+    
+    <item>
       <title>Exploring Data Lake</title>
       <link>https://blog.rainaldi.dev/posts/2019/03/exploring-data-lake/</link>
       <pubDate>Thu, 07 Mar 2019 00:00:00 +0000</pubDate>
@@ -197,16 +207,6 @@ Well, let&amp;rsquo;s same this is a fantastic plugin, I backed up the entire si
       <guid>https://blog.rainaldi.dev/posts/2011/08/using-wordpress/</guid>
       <description>Well, let me start by saying that my background has always been in Microsoft technologies (VB, C#, ASP.NET SQL Server, etc). But, I have used others such as Java, Oracle, Sybase, PHP and MySQL; this has always been a strong point of my background that I can easily switch between environments.
 A recent project at work pushed my hand to learn WordPress and like I usually do I jumped in full force.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://blog.rainaldi.dev/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.rainaldi.dev/about/</guid>
-      <description>As a principal platform engineer, Lou is responsible for designing software architectures for line of business applications. Lou has over 20 years of professional software development experience with a large focus on Microsoft technologies. He worked integrating systems such as Unix, Linux and AS/400 systems to handle business challenges.
-Team work and collaboration are very important to Lou and he thrives working with teams and individually. Lou has been responsible for overall project management on many projects, serving as technical lead and project manager, he is accustomed to wearing many hats.</description>
     </item>
     
   </channel>
