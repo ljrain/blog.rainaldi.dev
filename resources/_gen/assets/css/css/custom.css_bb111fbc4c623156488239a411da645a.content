@@ -1,9 +1,17 @@
+.pic_bw_left {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  float: left;
+  width: 25%;
+}
+
+
 /* base */
 html {
   font-size: calc(1em + 0.33vw);
 }
 body {
-  background-image: url('http://localhost:1313/img/geometry2.png');
+  background-image: url('https://blog.rainaldi.dev/img/geometry2.png');
 }
 
 /* anchors */
