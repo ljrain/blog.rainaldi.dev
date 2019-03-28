@@ -269,18 +269,15 @@ occurs on eConnect for Microsoft Dynamics GP 2010.</p>
 file for the eConnect Integration service.</p>
 
 <p>The binding section should resemble this:</p>
-
-<pre><code class="language-xml">&lt;binding name=&quot;eConnectNamedPipeConfig&quot; closeTimeout=&quot;00:10:00&quot; sendTimeout=&quot;00:10:00&quot;
-receiveTimeout =&quot;infinite&quot; transferMode=&quot;Buffered&quot; hostNameComparisonMode=&quot;StrongWildcard&quot;
-maxBufferPoolSize=&quot;2147483647&quot; maxBufferSize=&quot;2147483647&quot;
-maxReceivedMessageSize=&quot;2147483647&quot;&gt;
-    &lt;readerQuotas maxDepth=&quot;60&quot; maxStringContentLength=&quot;2147483647&quot;maxArrayLength=&quot;2147483647&quot;
-     maxBytesPerRead=&quot;2147483647&quot; maxNameTableCharCount=&quot;2147483647&quot; /&gt;
-    &lt;security mode=&quot;Transport&quot;&gt;&lt;transport protectionLevel=&quot;EncryptAndSign&quot; /&gt;
-    &lt;/security&gt;
-&lt;/binding&gt;
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;binding</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;eConnectNamedPipeConfig&#34;</span> <span style="color:#a6e22e">closeTimeout=</span><span style="color:#e6db74">&#34;00:10:00&#34;</span> <span style="color:#a6e22e">sendTimeout=</span><span style="color:#e6db74">&#34;00:10:00&#34;</span>
+<span style="color:#a6e22e">receiveTimeout =</span><span style="color:#e6db74">&#34;infinite&#34;</span> <span style="color:#a6e22e">transferMode=</span><span style="color:#e6db74">&#34;Buffered&#34;</span> <span style="color:#a6e22e">hostNameComparisonMode=</span><span style="color:#e6db74">&#34;StrongWildcard&#34;</span>
+<span style="color:#a6e22e">maxBufferPoolSize=</span><span style="color:#e6db74">&#34;2147483647&#34;</span> <span style="color:#a6e22e">maxBufferSize=</span><span style="color:#e6db74">&#34;2147483647&#34;</span>
+<span style="color:#a6e22e">maxReceivedMessageSize=</span><span style="color:#e6db74">&#34;2147483647&#34;</span><span style="color:#f92672">&gt;</span>
+    <span style="color:#f92672">&lt;readerQuotas</span> <span style="color:#a6e22e">maxDepth=</span><span style="color:#e6db74">&#34;60&#34;</span> <span style="color:#a6e22e">maxStringContentLength=</span><span style="color:#e6db74">&#34;2147483647&#34;</span><span style="color:#a6e22e">maxArrayLength=</span><span style="color:#e6db74">&#34;2147483647&#34;</span>
+     <span style="color:#a6e22e">maxBytesPerRead=</span><span style="color:#e6db74">&#34;2147483647&#34;</span> <span style="color:#a6e22e">maxNameTableCharCount=</span><span style="color:#e6db74">&#34;2147483647&#34;</span> <span style="color:#f92672">/&gt;</span>
+    <span style="color:#f92672">&lt;security</span> <span style="color:#a6e22e">mode=</span><span style="color:#e6db74">&#34;Transport&#34;</span><span style="color:#f92672">&gt;&lt;transport</span> <span style="color:#a6e22e">protectionLevel=</span><span style="color:#e6db74">&#34;EncryptAndSign&#34;</span> <span style="color:#f92672">/&gt;</span>
+    <span style="color:#f92672">&lt;/security&gt;</span>
+<span style="color:#f92672">&lt;/binding&gt;</span></code></pre></div>
 <p><a href="http://support.microsoft.com/kb/2539263">Read Microsoft Support KB.</a></p>
 
   </main>

@@ -4,17 +4,12 @@
   
   <url>
     <loc>https://blog.rainaldi.dev/posts/2019/03/extracting-json-with-usql/</loc>
-    <lastmod>2019-03-26T06:42:33-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.rainaldi.dev/about/</loc>
-    <lastmod>2019-03-25T10:48:13-04:00</lastmod>
+    <lastmod>2019-03-26T12:26:05-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://blog.rainaldi.dev/posts/2019/03/exploring-data-lake/</loc>
-    <lastmod>2019-03-25T12:02:08-04:00</lastmod>
+    <lastmod>2019-03-26T12:26:05-04:00</lastmod>
   </url>
   
   <url>
@@ -108,6 +103,10 @@
   </url>
   
   <url>
+    <loc>https://blog.rainaldi.dev/about/</loc>
+  </url>
+  
+  <url>
     <loc>https://blog.rainaldi.dev/tags/.dev/</loc>
     <lastmod>2019-03-26T06:31:52-04:00</lastmod>
     <priority>0</priority>
@@ -115,7 +114,7 @@
   
   <url>
     <loc>https://blog.rainaldi.dev/tags/about/</loc>
-    <lastmod>2019-03-25T10:48:13-04:00</lastmod>
+    <lastmod>2019-03-25T12:02:08-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -145,7 +144,7 @@
   
   <url>
     <loc>https://blog.rainaldi.dev/tags/azure/</loc>
-    <lastmod>2019-03-25T12:02:08-04:00</lastmod>
+    <lastmod>2019-03-26T12:26:05-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -169,7 +168,7 @@
   
   <url>
     <loc>https://blog.rainaldi.dev/tags/data-lake/</loc>
-    <lastmod>2019-03-26T06:42:33-04:00</lastmod>
+    <lastmod>2019-03-26T12:26:05-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -217,7 +216,7 @@
   
   <url>
     <loc>https://blog.rainaldi.dev/tags/json/</loc>
-    <lastmod>2019-03-26T06:42:33-04:00</lastmod>
+    <lastmod>2019-03-26T12:26:05-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -235,7 +234,7 @@
   
   <url>
     <loc>https://blog.rainaldi.dev/post/</loc>
-    <lastmod>2019-03-26T06:42:33-04:00</lastmod>
+    <lastmod>2019-03-26T12:26:05-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -265,7 +264,7 @@
   
   <url>
     <loc>https://blog.rainaldi.dev/tags/usql/</loc>
-    <lastmod>2019-03-26T06:42:33-04:00</lastmod>
+    <lastmod>2019-03-26T12:26:05-04:00</lastmod>
     <priority>0</priority>
   </url>
   

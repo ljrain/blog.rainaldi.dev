@@ -347,20 +347,11 @@
 
 <p>Each of the files may have a different format.
 <em>transaction.json</em></p>
-
-<pre><code>{&quot;id&quot;:&quot;9012&quot;,&quot;date&quot;:&quot;2019-03-01T03:14&quot;,&quot;totalinvoice&quot;:321.09}
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{<span style="color:#f92672">&#34;id&#34;</span>:<span style="color:#e6db74">&#34;9012&#34;</span>,<span style="color:#f92672">&#34;date&#34;</span>:<span style="color:#e6db74">&#34;2019-03-01T03:14&#34;</span>,<span style="color:#f92672">&#34;totalinvoice&#34;</span>:<span style="color:#ae81ff">321.09</span>}</code></pre></div>
 <p><em>transaction.csv</em></p>
-
-<pre><code>84012,2019-03-01T05:06&quot;,51.01
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csv" data-lang="csv">84012,2019-03-01T05:06&#34;,51.01</code></pre></div>
 <p><em>transaction.txt</em></p>
-
-<pre><code>50012 2019-03-01T09:37  25.00
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-txt" data-lang="txt">50012 2019-03-01T09:37  25.00</code></pre></div>
 <p>In the above example each location is sending the daily sales transactions to the Data Lake. The location will send the transactions in a JSON format and save the files to the correct location. This structure can be secured so each location will only have access to their directory path. This is the RAW data that is being sent from the source system. One location may send a JSON file and one location may send a CSV file. The schema on each location may be slightly different as well. We deal with that when we begin to read the data and transform it to the results that are desired. The above example is assuming that a daily file is  received from each location.</p>
 
 <h4 id="master-data">MASTER Data</h4>
@@ -371,12 +362,9 @@
 </code></pre>
 
 <p><em>all_transactions.json</em></p>
-
-<pre><code>{&quot;store&quot;:&quot;100&quot;,id&quot;:&quot;9012&quot;,&quot;date&quot;:&quot;2019-03-01T03:14&quot;,&quot;totalinvoice&quot;:321.09}
-{&quot;store&quot;:&quot;200&quot;,id&quot;:&quot;84012&quot;,&quot;date&quot;:&quot;2019-03-01T05:06&quot;,&quot;totalinvoice&quot;:51.01}
-{&quot;store&quot;:&quot;300&quot;,id&quot;:&quot;50012&quot;,&quot;date&quot;:&quot;2019-03-01T09:37&quot;,&quot;totalinvoice&quot;:25.00}
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{<span style="color:#f92672">&#34;store&#34;</span>:<span style="color:#e6db74">&#34;100&#34;</span>,<span style="color:#960050;background-color:#1e0010">id</span><span style="color:#f92672">&#34;:&#34;</span><span style="color:#ae81ff">9012</span><span style="color:#e6db74">&#34;,&#34;</span><span style="color:#960050;background-color:#1e0010">date</span><span style="color:#e6db74">&#34;:&#34;</span><span style="color:#ae81ff">2019-03-01</span><span style="color:#960050;background-color:#1e0010">T</span><span style="color:#ae81ff">03</span>:<span style="color:#ae81ff">14</span><span style="color:#e6db74">&#34;,&#34;</span><span style="color:#960050;background-color:#1e0010">totalinvoice</span><span style="color:#e6db74">&#34;:321.09}
+</span><span style="color:#e6db74">{&#34;</span><span style="color:#960050;background-color:#1e0010">store</span><span style="color:#e6db74">&#34;:&#34;</span><span style="color:#ae81ff">200</span><span style="color:#e6db74">&#34;,id&#34;</span>:<span style="color:#e6db74">&#34;84012&#34;</span>,<span style="color:#f92672">&#34;date&#34;</span>:<span style="color:#e6db74">&#34;2019-03-01T05:06&#34;</span>,<span style="color:#f92672">&#34;totalinvoice&#34;</span>:<span style="color:#ae81ff">51.01</span>}
+{<span style="color:#f92672">&#34;store&#34;</span>:<span style="color:#e6db74">&#34;300&#34;</span>,<span style="color:#960050;background-color:#1e0010">id</span><span style="color:#f92672">&#34;:&#34;</span><span style="color:#ae81ff">50012</span><span style="color:#e6db74">&#34;,&#34;</span><span style="color:#960050;background-color:#1e0010">date</span><span style="color:#e6db74">&#34;:&#34;</span><span style="color:#ae81ff">2019-03-01</span><span style="color:#960050;background-color:#1e0010">T</span><span style="color:#ae81ff">09</span>:<span style="color:#ae81ff">37</span><span style="color:#e6db74">&#34;,&#34;</span><span style="color:#960050;background-color:#1e0010">totalinvoice&#34;</span>:<span style="color:#ae81ff">25.00</span>}</code></pre></div>
 <p>This is a longer post than I anticipated, but I wanted to capture what a Data Lake is and build upon this. There are several other components that need to be addressed and will be in a future post.</p>
 
 <ul>
