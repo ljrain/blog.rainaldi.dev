@@ -1,7 +1,26 @@
+@charset "UTF-8";
 
 .pic_bw_left {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   float: left;
   width: 25%;
+}
+
+.pic_bw_right {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  float: right;
+  width: 25%;
+}
+
+.pic_width25 {
+  width: 25%;
+}
+
+.polaroid {
+  width: 30%;
+  background-color: white;
+  float: right;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
