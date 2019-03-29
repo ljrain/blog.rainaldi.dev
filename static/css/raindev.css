@@ -1,0 +1,7 @@
+
+.pic_bw_left {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  float: left;
+  width: 25%;
+}
