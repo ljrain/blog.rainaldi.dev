@@ -22,10 +22,6 @@ params:
     Deployed to [Firebase](https://firebase.google.com/docs/hosting).
   dateFormat: Jan 2, 2006
   codePenUser: someUser
-
-customCss: css/raindev.css
-
-
 menu:
   nav:
     - name: Home
