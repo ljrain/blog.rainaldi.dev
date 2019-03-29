@@ -1,3 +1,4 @@
+---
 baseURL: https://blog.rainaldi.dev
 languageCode: en-us
 defaultContentLanguage: en-us
@@ -6,29 +7,21 @@ theme: papercss-hugo-theme
 googleAnalytics: UA-136871287-1
 disqusShortname: blograinaldidev
 enableGitInfo: true
-
 pygmentsUseClassic: true
 pygmentsCodeFences: true
 taxonomies:
   tag: tags
-
-imaging:
-  quality = 99
-
-permalinks:
-  post: posts/:year/:month/:title/
-
 imaging:
   quality: 99
-
+permalinks:
+  post: posts/:year/:month/:title/
 params:
   description: My personal blog on technologies and rants about life.
   homeMetaContent: My personal blog on technologies and rants about life.
-  footer: Made with [Hugo](https://gohugo.io/). Themed by [Cupper](https://github.com/zwbetz-gh/cupper-hugo-theme). Deployed to [Firebase](https://firebase.google.com/docs/hosting).
-  # For more date formats see https://gohugo.io/functions/format/
+  footer: Made with [Hugo](https://gohugo.io/). Themed by [Cupper](https://github.com/zwbetz-gh/cupper-hugo-theme).
+    Deployed to [Firebase](https://firebase.google.com/docs/hosting).
   dateFormat: Jan 2, 2006
   codePenUser: someUser
-
 menu:
   nav:
     - name: Home
