@@ -1,8 +1,0 @@
-{{ range .Pages.ByDate . | first 5 }}
-<h3>Most Recent Posts</h3>
-<ul>
-	{{ range . }}
-	<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-	{{ end }}
-</ul>
-{{ end }}
