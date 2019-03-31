@@ -12,11 +12,11 @@
     
     
     <item>
-      <title>Welcome to My New Blog (blog.rainaldi.dev)</title>
-      <link>https://blog.rainaldi.dev/posts/2019/03/welcome-to-my-new-blog-blog.rainaldi.dev/</link>
+      <title>Welcome to My New Blog</title>
+      <link>https://blog.rainaldi.dev/posts/2019/03/welcome-to-my-new-blog/</link>
       <pubDate>Sat, 02 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rainaldi.dev/posts/2019/03/welcome-to-my-new-blog-blog.rainaldi.dev/</guid>
+      <guid>https://blog.rainaldi.dev/posts/2019/03/welcome-to-my-new-blog/</guid>
       <description>UPDATED: March 10, 2019
 I have had many different sites over the years.
 Recently, a few months ago I decided to shut them down. I was not updating them as much and focusing to much on maintaining and updating the site. With family and work I am very busy like many of you. A friend introduced me to Wyam.io which is a static site generator and hosting using Azure Blob Storage.</description>

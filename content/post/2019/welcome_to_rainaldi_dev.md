@@ -1,8 +1,9 @@
 ---
-title: "Welcome to My New Blog (blog.rainaldi.dev)"
+title: "Welcome to My New Blog"
 date: 2019-03-02T00:00:00-00:00
-tags: [Azure, Wyam.io, Static Site Generator, .DEV,Firebase]
+tags: [Azure, Wyam.io, Static Site Generator, .DEV, Firebase]
 toc: false
+series: Site Update
 ---
 {{< figure src="/images/2019/getdotdev.png" class="pic_width25" >}}
 

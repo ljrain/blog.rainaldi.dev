@@ -3,6 +3,7 @@ title: Extracting JSON With USQL
 date: 2019-03-25T12:07:00-04:00
 draft: false
 tags: [JSON,USQL,Data Lake]
+series: Data Lake
 ---
 While working on our Data Lake implementation we ran into issues saving our data to CSV. The Extractor for CSV does not ignore line feeds inside data. Which was a huge problem that we had to handle. After not much conversation it was decided to use JSON now, we planned on phasing JSON in later.
 
