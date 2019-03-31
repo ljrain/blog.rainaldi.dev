@@ -2,4 +2,11 @@
 
 {{ .Content }}
 
+<h3>Recenly Updated</h3>
+<ul>
+
+{{ range first 5 .Pages}}
+    <li><a href="{{ .RelPermalink }}">{{ .Lastmod.Format "January 2, 2006"  }} {{ .Title }}</a></li>
+{{ end }}
+</ul>
 {{ end }}
