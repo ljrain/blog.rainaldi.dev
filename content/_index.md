@@ -2,7 +2,7 @@
 date: "2017-06-26T18:27:58+01:00"
 title: "Home"
 ---
-{{< alert "success" >}} “Don't worry if your children never listen to you. Worry more that they are watching you”  Barbara *** {{< /alert >}}
+{{< alert "success" >}} “Don't worry if your children never listen to you. Worry more that they are watching you” -- Barbara Bush {{< /alert >}}
 
 {{< figure src="/images/2014/city_pgh_thepoint_fountain.jpg" width="400x" alt="The Point at Pittsburgh Three Rivers" >}}
 
@@ -14,4 +14,4 @@ I was really impressed when I started to learn about Static Site Generators and 
 
 Now, all of my content is written in MarkDown and Hugo generates a static site that I deploy to Google Firebase hosting.
 
-[Why I do what I do](http://localhost:1313/posts/2016/09/why-i-do-what-i-do/), I enjoyed this post and it really provides more information about me and what I do.
+[Why I do what I do](/posts/2016/09/why-i-do-what-i-do/), I enjoyed this post and it really provides more information about me and what I do.
