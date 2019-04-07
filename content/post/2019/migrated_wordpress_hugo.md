@@ -10,7 +10,7 @@ I have been using [WordPress] for a long time and could easily sping up a new si
 ## Why Hugo?
 I was very impressed with how well Hugo is documented and the foundation it has that I wanted to investigate more. Creating a new site with one of the many themes was very simple. You have to be familiar and comfortabl with command line though. Once again, I went back to the documentation and the active community group and found answers to my questions.
 
-As I looked more, I found [Hugo](https://gohugo.io) and decided to move to Hugo and that is where I am at now.
+I have also decided to use [PaperCss](https://papercss-hugo-theme.netlify.com/) as the theme. PaperCss is a very clean visually appealing theme. I was able to review how the theme was built from the source and understand what was going on with Hugo more. I am still struggling with placing images and having a better workflow in place. 
 
 ## Why Static Site
 A static site provides a huge performance increase of server side web sites. There is no server side processing on the web server which provides the performance gain. The site is all html, images and css. Pages are cached to increase the performance more.
