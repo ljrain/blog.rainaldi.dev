@@ -2,4 +2,11 @@
 
 {{ .Content }}
 
+<h3>Recenly Updated</h3>
+<ul>
+
+{{ range first 5 .Pages}}
+    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+{{ end }}
+</ul>
 {{ end }}
