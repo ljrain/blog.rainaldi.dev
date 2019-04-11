@@ -1,0 +1,12 @@
+<h1>{{ .Title }}</h1>
+{{ range where .Pages.ByPublishDate.Reverse "Section" "post" }}
+  <h2 class="post-list {{ if ne .Params.summary false }}summary{{ end }}">
+    <a href="{{ .Permalink }}">
+      {{ .Title }}
+    </a>
+  </h2>
+    <p>Published Date: {{ dateFormat "Jan 2, 2006" .Date }}</p>
+    {{ if ne .Params.summary false }}
+    {{ .Summary }}
+  {{ end }}
+{{ end }}
