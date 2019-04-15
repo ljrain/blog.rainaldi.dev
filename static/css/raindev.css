@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+.nav_wrapper {
+  background-image: url("images\city_pgh_the_point.jpg");
+
+}
 .pic_bw_left {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
