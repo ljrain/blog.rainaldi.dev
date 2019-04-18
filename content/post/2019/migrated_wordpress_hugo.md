@@ -38,15 +38,17 @@ A static site provides a huge performance increase of server side web sites. The
 
 Hosting a static site is very easy, any web hosting will work for static pages. There is no requirement to make sure the hosting provider handles .NET, PHP or any other server side language. 
 
-This opens you up to using Blob storage for hosting static sites which decreases the cost of hosting substantially. This can be with Azure, AWS, Google or [Netlify right here!](https://netlify.io) 
+This opens you up to using Blob storage for hosting static sites which decreases the cost of hosting substantially. This can be with Azure, AWS, Google or [Netlify right here!](https://netlify.com) 
 
-I started by using Azure with my developer account, but found there was a lot of steps and process that had to be setup and then included in the continuous integration. Then I tried Google Firebase, it was very simple to get setup on Firebase. But, I had trouble getting the continue integration working, I know others have it work I just didn't have the time to research. During my research I found Netlify and it made this SO easy! It was at that point the way I would go. I had one problem with having my theme deploy, a simple message and it was resolved.  **Thank you Luke!!**
+I started by using Azure with my developer account, but found there was a lot of steps and process that had to be setup and then included in the continuous integration. Then I tried Google Firebase, it was very simple to get setup on Firebase. But, I had trouble getting the continue integration working, I know others have it work I just didn't have the time to research. During my research I found Netlify and it made this SO easy! It was at that point the way I would go. I had one problem with having my theme deploy, a simple message and it was resolved.  
+
+**Thank you Luke!!**
 
 ## Why Markdown
 
-I have been using Markdown for some time now, I use Markdown in my personal journal as well as when I am taking notes. With Markdown you focus on your writing with a basic text editor and apply some simple syntax that can be converted into other formats (in this case HTML). Markdown can be converted to PDF files and many other formats.
+As I said early I have been using Markdown for some time now, I use Markdown in my personal journal as well as when I am taking notes. With Markdown you focus on your writing with a basic text editor and apply some simple syntax that can be converted into other formats (in this case HTML). Markdown can be converted to PDF files and many other formats.
 
-Markdown provides a separation of design from content. This provides a nice workflow for creating and editing content on a web site.
+Markdown provides a separation of design from content. This provides a nice workflow for creating and editing content on a web site. This also provides a convenient way to use source control, like Github.
 
 ### Front Matter
 
