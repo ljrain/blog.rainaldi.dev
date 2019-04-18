@@ -22,15 +22,7 @@ This site is also using [Netlify](https://www.netlify.com) for hosting and also 
 
 ## Why Hugo?
 
-[Hugo](https://gohugo.io) is written in the [Go language](https://golang.org) and has great documentation and a very active community.
-
-After reading the documentation and looking at the available themes, I decided this is the way for me to go. I choose the theme \[PaperCss\] which I felt was the perfect look for this site.
-
-I am a principal engineer, which means I design architectures for systems. With this site, I wanted to be able to focus on content and sharing what I am learning. Using Markdown and Hugo makes this very easy and also provides me the option of customizing without a huge amount of effort. _Unless, of course I want to put the time in and really customize a site._
-
-
-
-When I first tried [GoHugo](https://www.gohugo.io) and was very impressed with how fast it generates code, very good documentation and a active community.
+[Hugo](https://gohugo.io) is written in the [Go language](https://golang.org) and has great documentation and a very active community. When I first tried [GoHugo](https://www.gohugo.io) and was very impressed with how fast it generates code, very good documentation and a active community.
 
 It is very easy to download Hugo and create a new site with one of the many themes available. Hugo like most _Static Site Generators_ are command line based, documented to make it very quick to create a new site. Hugo also provides a lot of ways to customize the site that provides a powerful framework.
 
