@@ -1,5 +1,5 @@
 ---
-title: Why Migratee from WordPress to Hugo
+title: Why Migrated from WordPress to Hugo
 date: 2019-03-25 16:07:00 +0000
 tags:
 - About
