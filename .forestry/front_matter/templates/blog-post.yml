@@ -23,4 +23,3 @@ fields:
   label: toc
 pages:
 - content/post/2019/creating-dynamic-azure-data-factory-pipelines.md
-- content/post/2019/hugo-themes.md
