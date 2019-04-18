@@ -1,20 +1,21 @@
 # blog.rainaldi.dev
 My Personal blog on technology
 
-This repository contains the source including content for my personal blog.
+I am a principal engineer, which means I design architectures for systems. With this site, I wanted to be able to focus on content and sharing what I am learning. Using Markdown and Hugo makes this very easy and also provides me the option of customizing without a huge amount of effort. _Unless, of course I want to put the time in and really customize a site._
+
+**This repository contains the source including content for my personal blog.**
 
 ## Roadmap
-- [ ] Fix home page and default layout
+- [X] Fix home page and default layout
 - [ ] Add icon for tags
 - [ ] Add icon for new taxonomy - category ??
-- [ ] Configure Google Cloud Build
-- [ ] Write post about configuring Google Cloud Build
-- [ ] Configure Google Deploy
-- [ ] Write post about configuring Google Cloud Deploy 
+- ~~[ ] Configure Google Cloud Build~~
+- ~~[ ] Write post about configuring Google Cloud Build~~
+- ~~[ ] Configure Google Deploy~~
+- [x] Write post about reason for new site platform 
 - [ ] Add Contact Me form
 - [ ] Verify Google Analytics are working
-- [ ] 
-
+- [ ] Add list page for _Series_ 
 
 ## Revisions (site changes, not content)
 
