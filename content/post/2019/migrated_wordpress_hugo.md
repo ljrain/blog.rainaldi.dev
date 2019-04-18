@@ -70,7 +70,7 @@ Since Markdown is text it can be edited with any text editor, but you can find t
 
 ## Source Control
 
-All of the site is stored on GitHub, which provides a nice workflow for tracking changes and opening up to continuous integration and deployment (I am not there yet...).
+All of the site is stored on [GitHub](https://github.com), which provides a nice workflow for tracking changes and continuous integration. ~opening up to continuous integration and deployment (I am not there yet...).~
 
 ### Contributors
 
