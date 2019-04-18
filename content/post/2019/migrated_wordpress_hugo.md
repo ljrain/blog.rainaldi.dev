@@ -12,8 +12,6 @@ series: Site Update
 draft: true
 
 ---
-I have been using [WordPress](https://www.wordpress.org) for a long time and could easily create a new site, customize it and publish it very quickly. 
-
 Having seen more talk lately on Static Site Generators and looking a [Wyam.io](https://www.wyam.io) and then [GoHugo.io](https://www.gohugo.io) I decided to switch to a Static Generated Site using Hugo.
 
 ## Why Hugo?
