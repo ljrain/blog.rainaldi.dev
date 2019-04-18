@@ -14,13 +14,21 @@ draft: true
 ---
 This is a _personal site_ and lower cost is **ALWAYS** good!
 
-Using a _Static Site Generator_ provides many benefits;  such as increase performance, customable, cheap hosting, markdown and active communities. I have been using Markdown for some time now and prefer to use Markdown. 
+Using a _Static Site Generator_ provides many benefits;  such as increase performance, customable, cheap hosting, [Markdown](https://en.wikipedia.org/wiki/Markdown) and active communities. I have been using Markdown for some time now and prefer to use Markdown. 
 
 Having some research and investigation of different generators I decided on [GoHugo](https://www.gohugo.io). 
 
 This site is also using [Netlify](https://www.netlify.com) for hosting and also editing this post with [ForestryIO](https://www.forestry.io). Once I publish this post in Forestry it will bre committed and trigger a build with Hugo and then be published on Netlify. I am a geek, so this is really cool!
 
 ## Why Hugo?
+
+[Hugo](https://gohugo.io) is written in the [Go language](https://golang.org) and has great documentation and a very active community.
+
+After reading the documentation and looking at the available themes, I decided this is the way for me to go. I choose the theme \[PaperCss\] which I felt was the perfect look for this site.
+
+I am a principal engineer, which means I design architectures for systems. With this site, I wanted to be able to focus on content and sharing what I am learning. Using Markdown and Hugo makes this very easy and also provides me the option of customizing without a huge amount of effort. _Unless, of course I want to put the time in and really customize a site._
+
+
 
 When I first tried [GoHugo](https://www.gohugo.io) and was very impressed with how fast it generates code, very good documentation and a active community.
 
@@ -46,9 +54,9 @@ I started by using Azure with my developer account, but found there was a lot of
 
 ## Why Markdown
 
-As I said early I have been using Markdown for some time now, I use Markdown in my personal journal as well as when I am taking notes. With Markdown you focus on your writing with a basic text editor and apply some simple syntax that can be converted into other formats (in this case HTML). Markdown can be converted to PDF files and many other formats.
+As I said early I have been using [Markdown](https://en.wikipedia.org/wiki/Markdown) for some time now, I use Markdown in my personal journal as well as when I am taking notes. With Markdown you focus on your writing with a basic text editor and apply some simple syntax that can be converted into other formats (in this case HTML). Markdown can be converted to PDF files and many other formats.
 
-Markdown provides a separation of design from content. This provides a nice workflow for creating and editing content on a web site. This also provides a convenient way to use source control, like Github.
+Markdown provides a separation of design from content. This provides a nice workflow for creating and editing content on a web site. This also provides a convenient way to use source control, like [Github](https://github.com).
 
 ### Front Matter
 
@@ -60,18 +68,13 @@ title: "Using Hugo Static Site Generater"
 date: 2019-03-25T12:07:00-04:00
 draft: true
 tags: [About, Hugo, Static Site Generater, Firebase]
+series: "About Site"
 ---
 ```
 
-The snippet above shows the Front Matter for this post. The information in the Markdown is used by the generator to build out the web site. Front Matter can be customized with new meta data and then used in templates to handle the meta data. For example, I will be adding additional information to the Front Matter for a feature image. This will allow the feature image to be specified in the Front Matter and then used for a thumbnail on a list page.
+The snippet above shows the _Front Matter_ for this post. The information in the Markdown is used by the generator to build out the web site. Front Matter can be customized with new meta data and then used in templates to handle the meta data. For example, I will be adding additional information to the Front Matter for a feature image. You can customize _Front Matter_ to use it to achieve different results. I have this post set as part of a _Series_, this will provide a way to  group all posts in this series together. I will be adding _image_ to be specified in the Front Matter and then used for a thumbnail on a list page.
 
-## Why Hugo?
-
-[Hugo](https://gohugo.io) is written in the [Go language](https://golang.org) and has great documentation and a very active community. Hugo also have a large selection of themes to choose from.
-
-After reading the documentation and looking at the available themes, I decided this is the way for me to go. I choose the theme \[PaperCss\] which I felt was the perfect look for this site.
-
-I am a principal engineer, which means I design architectures for systems. With this site, I wanted to be able to focus on content and sharing what I am learning. Using Markdown and Hugo makes this very easy and also provides me the option of customizing without a huge amount of effort. _Unless, of course I want to put the time in and really customize a site._
+Since Markdown is text it can be edited with any text editor, but you can find text editors that are made for markdown like Note Pad ++, Atom, etc.
 
 ## Source Control
 
