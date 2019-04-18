@@ -12,7 +12,7 @@ series: Site Update
 draft: true
 
 ---
-After many years I have decided to migrate my blog  content to a new domain and a new site as \[discussed here\](/posts/2019/03/welcome-to-my-new-blog/).
+After many years I have decided to migrate my blog  content to a new domain and a new as [discussed in this post](posts/2019/03/welcome-to-my-new-blog)
 
 Having seen more talk lately on Static Site Generators and looking a [Wyam.io](https://www.wyam.io) and then [GoHugo.io](https://www.gohugo.io) I decided to switch to a Static Generated Site using Hugo.
 
