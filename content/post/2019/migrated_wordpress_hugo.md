@@ -9,7 +9,7 @@ tags:
 - Forestry
 - Netlify
 series: Site Update
-
+toc: false
 ---
 This is a _personal site_ and lower cost is **ALWAYS** good!
 
