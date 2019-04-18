@@ -9,7 +9,6 @@ tags:
 - Forestry
 - Netlify
 series: Site Update
-draft: true
 
 ---
 This is a _personal site_ and lower cost is **ALWAYS** good!
