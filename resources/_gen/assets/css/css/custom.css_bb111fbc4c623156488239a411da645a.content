@@ -3,7 +3,7 @@ html {
   font-size: calc(1em + 0.33vw);
 }
 body {
-  background-image: url('http://localhost:1313/img/geometry2.png');
+  background-image: url('http://localhost:10800/img/geometry2.png');
 }
 
 /* anchors */
