@@ -12,27 +12,35 @@ series: Site Update
 draft: true
 
 ---
-After many years I have decided to migrate my blog  content to a new domain and a new as [discussed in this post](posts/2019/03/welcome-to-my-new-blog)
+This is a _personal site_ and lower cost is **ALWAYS** good!
 
-Having seen more talk lately on Static Site Generators and looking a [Wyam.io](https://www.wyam.io) and then [GoHugo.io](https://www.gohugo.io) I decided to switch to a Static Generated Site using Hugo.
+Using a _Static Site Generator_ provides many benefits;  such as increase performance, customable, cheap hosting, markdown and active communities. I have been using Markdown for some time now and prefer to use Markdown. 
+
+Having some research and investigation of different generators I decided on [GoHugo](https://www.gohugo.io). 
+
+This site is also using [Netlify](https://www.netlify.com) for hosting and also editing this post with [ForestryIO](https://www.forestry.io). Once I publish this post in Forestry it will bre committed and trigger a build with Hugo and then be published on Netlify. I am a geek, so this is really cool!
 
 ## Why Hugo?
 
-I was very impressed with how well Hugo is documented and the foundation it has that I wanted to investigate more. Creating a new site with one of the many themes was very simple. You have to be familiar and comfortable with command line though. Once again, I went back to the documentation and the active community group and found answers to my questions.
+When I first tried [GoHugo](https://www.gohugo.io) and was very impressed with how fast it generates code, very good documentation and a active community.
 
-I have also decided to use [PaperCss](https://papercss-hugo-theme.netlify.com/) as the theme. PaperCss is a very clean visually appealing theme. I was able to review how the theme was built from the source and understand what was going on with Hugo more. I am still struggling with placing images and having a better workflow in place.
+It is very easy to download Hugo and create a new site with one of the many themes available. Hugo like most _Static Site Generators_ are command line based, documented to make it very quick to create a new site. Hugo also provides a lot of ways to customize the site that provides a powerful framework.
+
+One of the aspects that I really like about _Static Site Generators_ and Hugo is the use of Markdown. I have been using Markdown for a long time and ever had it enabled in Wordpress.
+
+The theme [PaperCss](https://papercss-hugo-theme.netlify.com/) is very clean and really visually appealing. I added a submodule to the git repository for this blog and read the short and clear documentation. 
+
+I am still struggling with placing images and having a better workflow in place. Currently, I am using the figure element and custom css.
 
 ## Why Static Site
 
-A static site provides a huge performance increase of server side web sites. There is no server side processing on the web server which provides the performance gain. The site is all html, images and css. Pages are cached to increase the performance more.
+A static site provides a huge performance increase of server side web sites. There is no server side processing on the web server which provides the performance gain. The site is all html,javascript, images and css. Pages are cached and hosted on a CDN to increase performance.
 
-Hosting a static site is very easy, any web hosting will work for static pages. There is no requirement to make sure the hosting provider handles .NET, PHP or any other server side language.
+Hosting a static site is very easy, any web hosting will work for static pages. There is no requirement to make sure the hosting provider handles .NET, PHP or any other server side language. 
 
-This opens you up to using Blob storage for hosting static sites which great decreases the cost of hosting.
+This opens you up to using Blob storage for hosting static sites which decreases the cost of hosting substantially. This can be with Azure, AWS, Google or [Netlify right here!](https://netlify.io) 
 
-This is a personal site and lower cost is **ALWAYS** good.  Hosting a static web site is less expensive or even free! I have been looking and experimenting with the following hosting providers.
-
-Right now my site hosting is free with Google Firebase Hosting, if my site gets heavy use then price will increase but no where near the cost of _normal_ hosting package. For example, I was hosting for about $20 a month and now my cost is FREE.
+I started by using Azure with my developer account, but found there was a lot of steps and process that had to be setup and then included in the continuous integration. Then I tried Google Firebase, it was very simple to get setup on Firebase. But, I had trouble getting the continue integration working, I know others have it work I just didn't have the time to research. During my research I found Netlify and it made this SO easy! It was at that point the way I would go. I had one problem with having my theme deploy, a simple message and it was resolved.  **Thank you Luke!!**
 
 ## Why Markdown
 
