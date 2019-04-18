@@ -3,10 +3,15 @@
 {{ .Content }}
 
 <h3>Recenly Updated</h3>
-<ul>
 
-{{ range first 5 .Pages}}
-    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+<table>
+{{ range first 3 ( where .Pages.ByPublishDate.Reverse "Section" "post") }}
+    <tr>
+      <td> {{ .Lastmod.Format "Jan 2 2006" }}</td>
+      <td><a href="{{ .RelPermalink }}">{{ .Title }}</a> {{ .ReadingTime }} min read
+        <p> {{ .Summary }} </p>
+      </td>
+    </tr>
 {{ end }}
-</ul>
+</table>
 {{ end }}
