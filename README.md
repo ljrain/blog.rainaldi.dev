@@ -1,4 +1,5 @@
 # blog.rainaldi.dev
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8b122436-ec40-40f2-bb46-afb27f1020fe/deploy-status)](https://app.netlify.com/sites/blograin/deploys)
 My Personal blog on technology
 
 I am a principal engineer, which means I design architectures for systems. With this site, I wanted to be able to focus on content and sharing what I am learning. Using Markdown and Hugo makes this very easy and also provides me the option of customizing without a huge amount of effort. _Unless, of course I want to put the time in and really customize a site._
