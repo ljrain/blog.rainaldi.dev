@@ -20,4 +20,7 @@
 
 <small class="gray c2sc"><em>Updated: {{ .Lastmod }} {{ .GitInfo.AbbreviatedHash }}</em></small>
 
+ {{ $postgithash := .GitInfo.Hash }}
+ {{ (print "<!-- LATEST GIT HASH: " $postgithash " -->") | safeHTML }}
+
 {{ end }}
