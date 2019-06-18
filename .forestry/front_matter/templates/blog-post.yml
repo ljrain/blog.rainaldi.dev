@@ -22,5 +22,6 @@ fields:
   name: toc
   label: toc
 pages:
+- content/post/2019/data-lake-reporting.md
 - content/post/2019/never-stop-learning.md
 - content/post/2019/creating-dynamic-azure-data-factory-pipelines.md
